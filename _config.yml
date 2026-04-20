@@ -21,7 +21,7 @@ repository               : "nimadarbandi/nimadarbandi.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar           : "profile.png"
+  avatar           : "profile.jpeg"
   name             : "Nima Darbandi"
   bio              : "PhD student in Computer Science at the University of Georgia. My research focuses on AI for healthcare, including computer vision, multimodal learning, and genomics, with applications in early disease detection and precision medicine."
   location         : "Athens, GA, USA"
