@@ -8,7 +8,7 @@ tags:
   - clinical workflow
   - patient tools
 post_icon: /images/faraz-icon.png
-post_icon_width: 40
+post_icon_width: 30
 ---
 I built **Patient Co-Pilot** mobile app to solve a very practical patient problem: confused with too much medical information, spread across too many places, from too many doctors.
 
