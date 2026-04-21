@@ -13,7 +13,7 @@ title                    : "Nima Darbandi | PhD in Computer Science"
 title_separator          : "-"
 name                     : &name "Nima Darbandi"
 description              : &description "PhD student at the University of Georgia working on AI-driven biomedical systems, computer vision, and genomics for early disease detection and precision medicine."
-url                      : https://nimadarbandi.github.io
+url                      : https://darbandi.me
 baseurl                  : ""
 repository               : "nimadarbandi/nimadarbandi.github.io"
 
