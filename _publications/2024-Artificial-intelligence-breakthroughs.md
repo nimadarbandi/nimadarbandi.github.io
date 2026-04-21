@@ -3,7 +3,7 @@ title: "Artificial intelligence breakthroughs in pioneering early diagnosis and 
 collection: publications
 category: journals
 permalink: /publication/2024-Artificial-intelligence-breakthroughs
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'This is a systematic multimethod study that evaluates the effectiveness of various AI and DL techniques in the early detection and precision treatment of breast cancer. Future efforts in the generalization of these models across diverse populations and encourage cross-disciplinary collaboration to integrate AI tools more seamlessly into standard clinical workflows.'
 date: 2024-9-1
 venue: 'European Journal of Cancer'
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
