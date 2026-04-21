@@ -23,9 +23,9 @@ repository               : "nimadarbandi/nimadarbandi.github.io"
 author:
   avatar           : "profile.jpeg"
   name             : "Nima Darbandi"
-  bio              : "PhD student in Computer Science \nSchool of Computing"
+  bio              : "PhD student in Computer Science"
   location         : "Athens, GA, USA"
-  employer         : "University of Georgia"
+  employer         : "University of Georgia - School of Computing"
   email            : "darbandi@uga.edu"
 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=-c0jfaUAAAAJ"
