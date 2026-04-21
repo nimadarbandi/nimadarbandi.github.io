@@ -23,7 +23,7 @@ repository               : "nimadarbandi/nimadarbandi.github.io"
 author:
   avatar           : "profile.jpeg"
   name             : "Nima Darbandi"
-  bio              : "PhD student in Computer Science\nSchool of Computing\nPultry Science Department"
+  bio              : "PhD student in Computer Science \nSchool of Computing \nPultry Science Department"
   location         : "Athens, GA, USA"
   employer         : "University of Georgia"
   email            : "darbandi@uga.edu"
