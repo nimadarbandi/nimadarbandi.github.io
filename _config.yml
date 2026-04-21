@@ -23,7 +23,7 @@ repository               : "nimadarbandi/nimadarbandi.github.io"
 author:
   avatar           : "profile.jpeg"
   name             : "Nima Darbandi"
-  bio              : "PhD student in Computer Science at the University of Georgia. My research focuses on AI for healthcare, including computer vision, multimodal learning, and genomics, with applications in early disease detection and precision medicine."
+  bio              : "PhD student in Computer Science at the University of Georgia"
   location         : "Athens, GA, USA"
   employer         : "University of Georgia"
   email            : "darbandi@uga.edu"
@@ -62,7 +62,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
