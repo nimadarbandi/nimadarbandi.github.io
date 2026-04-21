@@ -10,28 +10,44 @@
 <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}" sizes="192x192"/>
 <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#BA0C2F"/>
+<meta name="theme-color" content="#111111"/>
 
 <style>
   :root {
-    --global-base-color: #BA0C2F;
-    --global-link-color: #BA0C2F;
-    --global-link-color-hover: #8E0B26;
-    --global-link-color-visited: #7A0019;
-    --global-masthead-link-color-hover: #BA0C2F;
-    --global-footer-bg-color: #f6f3f4;
-    --global-border-color: #eadfe2;
+    --global-base-color: #111111;
+    --global-link-color: #1a1a1a;
+    --global-link-color-hover: #000000;
+    --global-link-color-visited: #2f2f2f;
+    --global-masthead-link-color-hover: #000000;
+    --global-text-color: #111111;
+    --global-footer-bg-color: #f5f5f5;
+    --global-border-color: #e4e4e4;
   }
 
   html[data-theme="dark"] {
-    --global-base-color: #BA0C2F;
-    --global-link-color: #d84f70;
-    --global-link-color-hover: #ef6f8d;
-    --global-link-color-visited: #c84566;
-    --global-masthead-link-color-hover: #d84f70;
+    --global-base-color: #d9d9d9;
+    --global-link-color: #e6e6e6;
+    --global-link-color-hover: #ffffff;
+    --global-link-color-visited: #d9d9d9;
+    --global-masthead-link-color-hover: #ffffff;
     --global-bg-color: #1b1b1b;
     --global-footer-bg-color: #151515;
-    --global-border-color: #3b3134;
+    --global-border-color: #363636;
+  }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .masthead,
+  .archive__item-title,
+  .page__title {
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   .masthead__uga-logo {
@@ -40,6 +56,18 @@
     object-fit: contain;
     vertical-align: text-bottom;
     margin-right: 8px;
+  }
+
+  .footer__uga-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .page__footer-brand {
+    margin-bottom: 0.5rem;
   }
 
   .masthead__menu-item.selected a {
