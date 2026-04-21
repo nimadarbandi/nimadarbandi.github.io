@@ -91,12 +91,9 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Artificial intelligence breakthroughs in pioneering early diagnosis and precision treatment of breast cancer: A multimethod study'
-    title: 'Bridging Brains and Machines: A Unified Frontier in Neuroscience, Artificial Intelligence, and Neuromorphic Systems'
+    title: 'Manuscripts'
   conferences:
-    title: 'Advancements in AI for Breast Cancer Diagnosis: A 2024–2025 Systematic Review Update'
-    title: 'Evolutionary Computing Applications and Trends from 2010 to 2025: A Brief Review'
-    title: "Foundation Models as Data Engines: Label-Efficient Learning in Modern Computer Vision"
+    title: 'Conferences'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
