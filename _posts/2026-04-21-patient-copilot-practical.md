@@ -1,5 +1,5 @@
 ---
-title: "Patient Co-Pilot: A Practical Way to Navigate Complex Clinical Information"
+title: "Patient Co-Pilot: Helping Patients Navigate Complex Care with Confidence"
 date: 2026-04-21
 permalink: /posts/2026/04/patient-copilot-practical/
 tags:
@@ -8,13 +8,8 @@ tags:
   - clinical workflow
   - patient tools
 ---
-
+<img src="/images/faraz-icon.png" alt="Patient Co-Pilot app logo" width="64" />
 I built **Patient Co-Pilot** to solve a very practical patient problem: too much medical information, spread across too many places, from too many doctors.
-
-<div style="display:flex; gap:14px; align-items:center; margin: 8px 0 14px 0;">
-  <img src="/images/faraz-icon.png" alt="Patient Co-Pilot app logo" width="64" />
-  <img src="/images/patient.png" alt="Patient hospital icon" width="64" />
-</div>
 
 When patients are dealing with multiple visits, reports, and prescriptions, it is hard to track what matters, what changed, and what to ask next. This app helps patients keep their information together, understand their care plan better, and show up prepared for clinical discussions.
 
