@@ -6,6 +6,11 @@
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
+    <li>
+      <a href="https://www.uga.edu/" rel="nofollow">
+        <img class="social-uga-logo" src="{{ '/images/UGA.png' | relative_url }}" alt="UGA logo"> UGA
+      </a>
+    </li>
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
@@ -20,12 +25,6 @@
 {% endif %}
 
 <div class="page__footer-copyright">
-  <div class="page__footer-brand">
-    <img
-      class="footer__uga-logo"
-      src="{{ '/images/UGA.png' | relative_url }}"
-      alt="UGA logo">
-  </div>
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
   Site last updated {{ "now" | date: '%Y-%m-%d' }}
 </div>

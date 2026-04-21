@@ -2,6 +2,9 @@
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}"/>
@@ -31,14 +34,14 @@
   input,
   select,
   textarea {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Merriweather Sans", "Helvetica Neue", Arial, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6,
   .masthead,
   .archive__item-title,
   .page__title {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   }
 
   html:not([data-theme="dark"]) h1,
@@ -72,16 +75,12 @@
     margin-right: 8px;
   }
 
-  .footer__uga-logo {
-    width: 28px;
-    height: 28px;
+  .social-uga-logo {
+    width: 18px;
+    height: 18px;
     object-fit: contain;
     vertical-align: middle;
-    margin-right: 8px;
-  }
-
-  .page__footer-brand {
-    margin-bottom: 0.5rem;
+    margin-right: 6px;
   }
 
   html:not([data-theme="dark"]) .masthead__menu-item.selected a {
