@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-## About Me
 I am a Ph.D. student in Computer Science at the University of Georgia, working at the intersection of artificial intelligence and healthcare. My research focuses on developing intelligent systems for early disease detection, precision medicine, and behavior analysis using multimodal data.
 
 My work combines computer vision, machine learning, and large language models to build self-improving systems that can learn from limited data and adapt to real-world environments.
