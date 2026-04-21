@@ -15,16 +15,16 @@ My work combines computer vision, machine learning, and large language models to
 ---
 
 ## Research Interests
+- AI for Animal Behaviour Analysis
 - AI for Healthcare and Precision Medicine  
 - Early Disease Detection (especially cancer)  
 - Computer Vision and Multimodal Learning  
-- Foundation Models and Label-Efficient Learning  
-- Behavior Modeling in Biological Systems  
+- Foundation Models and Label-Efficient Learning
 
 ---
 
 ## Current Work
-- Developing label-efficient pipelines for object detection using foundation models (ECCV 2026 submission)  
+- Developing label-efficient pipelines for object detection using foundation models
 - Building AI systems for medical image analysis and clinical decision support  
 - Designing multimodal tracking systems integrating vision and sensor data  
 - Exploring connections between behavior modeling and biological intelligence  
@@ -33,7 +33,7 @@ My work combines computer vision, machine learning, and large language models to
 
 ## Selected Publications
 - *Artificial Intelligence Breakthroughs in Early Diagnosis and Precision Treatment of Breast Cancer: A Multimethod Study* (2024)  
-- *Advancements in AI for Breast Cancer Diagnosis: A Systematic Review Update* (2025)  
+- *Foundation Models as Data Engines:Label-Efficient Learning in Modern Computer Vision* (2026)
 - *Evolutionary Computing Applications and Trends from 2010 to 2025: A Brief Review* (2025)  
 
 *(See the Publications page for the full list.)*
@@ -41,17 +41,13 @@ My work combines computer vision, machine learning, and large language models to
 ---
 
 ## Ongoing Projects
-- AI-driven cancer diagnosis and biomarker discovery  
-- Vision-language models for medical data understanding  
-- Autonomous data curation using foundation models  
-- Behavior tracking in multi-sensor environments  
+- Patient Copilot for educating patient and help in decision making processes
+- Autonomous data curation using foundation models and Vision-language models
+- Animal Behavior tracking in multi-sensor/multi-camera environments
 
 ---
 
 ## Contact
 Feel free to reach out for collaborations or discussions related to AI, healthcare, and interdisciplinary research.
-
-📧 Email: [darbandi@uga.edu]  
-📍 University of Georgia, Athens, GA  
 
 ---
