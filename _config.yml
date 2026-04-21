@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default"
-title                    : "Nima Darbandi | PhD Student in Computer Science"
+site_theme               : "Nima Darbandi"
+title                    : "Nima Darbandi | PhD in Computer Science"
 title_separator          : "-"
 name                     : &name "Nima Darbandi"
 description              : &description "PhD student at the University of Georgia working on AI-driven biomedical systems, computer vision, and genomics for early disease detection and precision medicine."
@@ -21,7 +21,7 @@ repository               : "nimadarbandi/nimadarbandi.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar           : "profile-BW.jpeg"
+  avatar           : "profile.jpeg"
   name             : "Nima Darbandi"
   bio              : "PhD student in Computer Science at the University of Georgia. My research focuses on AI for healthcare, including computer vision, multimodal learning, and genomics, with applications in early disease detection and precision medicine."
   location         : "Athens, GA, USA"
@@ -47,7 +47,7 @@ author:
   semantic         : # URL
   ssrn             : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Nima-Darbandi" # URL
   scopus           : # URL
   zotero           : # URL
 
@@ -56,7 +56,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "nimadarbandi"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -71,7 +71,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : nimadarbandi # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -79,12 +79,12 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : nimadarbandi # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : # Username
+  youtube          : darbandi6007 # Username
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
@@ -92,9 +92,12 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Artificial intelligence breakthroughs in pioneering early diagnosis and precision treatment of breast cancer: A multimethod study'
+    title: 'Bridging Brains and Machines: A Unified Frontier in Neuroscience, Artificial Intelligence, and Neuromorphic Systems'
   conferences:
-    title: 'Conference Papers'
+    title: 'Advancements in AI for Breast Cancer Diagnosis: A 2024–2025 Systematic Review Update'
+    title: 'Evolutionary Computing Applications and Trends from 2010 to 2025: A Brief Review'
+    title: "Foundation Models as Data Engines: Label-Efficient Learning in Modern Computer Vision"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -143,7 +146,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : @nimadarbandi
 facebook:
   username               :
   app_id                 :
