@@ -1,7 +1,7 @@
 ---
 title: "Artificial intelligence breakthroughs in pioneering early diagnosis and precision treatment of breast cancer: A multimethod study"
 collection: publications
-category: journals
+category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-1
 excerpt: 'This is a systematic multimethod study that evaluates the effectiveness of various AI and DL techniques in the early detection and precision treatment of breast cancer. Future efforts in the generalization of these models across diverse populations and encourage cross-disciplinary collaboration to integrate AI tools more seamlessly into standard clinical workflows.'
 date: 2024-9-1
