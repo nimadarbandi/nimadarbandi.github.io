@@ -2,7 +2,7 @@
 title: "Artificial intelligence breakthroughs in pioneering early diagnosis and precision treatment of breast cancer: A multimethod study"
 collection: publications
 category: journals
-permalink: /publication/2024-Artificial intelligence breakthroughs
+permalink: /publication/2024-Artificial-intelligence-breakthroughs
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-9-1
 venue: 'European Journal of Cancer'
