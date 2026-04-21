@@ -3,7 +3,7 @@ title: "Bridging Brains and Machines: A Unified Frontier in Neuroscience, Artifi
 collection: publications
 category: manuscripts
 permalink: /publication/2025-07-14-Bridging-Brains-and-Machines
-excerpt: 'This paper is mainly about the emerging convergence of neuroscience, AGI, and neuromorphic computing into a unified research paradigm.The future work is focused on scaling neuromorphic systems to match the complexity of the human brain through 3D hardware integration and advanced memristive materials.'
+excerpt: 'This paper is mainly about the emerging convergence of neuroscience, AGI, and neuromorphic computing.The future work is focused on scaling neuromorphic systems to match the complexity of the human brain.'
 date: 2025-7-14
 venue: 'ArXiv'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
