@@ -10,6 +10,44 @@
 <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}" sizes="192x192"/>
 <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
+<meta name="theme-color" content="#BA0C2F"/>
+
+<style>
+  :root {
+    --global-base-color: #BA0C2F;
+    --global-link-color: #BA0C2F;
+    --global-link-color-hover: #8E0B26;
+    --global-link-color-visited: #7A0019;
+    --global-masthead-link-color-hover: #BA0C2F;
+    --global-footer-bg-color: #f6f3f4;
+    --global-border-color: #eadfe2;
+  }
+
+  html[data-theme="dark"] {
+    --global-base-color: #BA0C2F;
+    --global-link-color: #d84f70;
+    --global-link-color-hover: #ef6f8d;
+    --global-link-color-visited: #c84566;
+    --global-masthead-link-color-hover: #d84f70;
+    --global-bg-color: #1b1b1b;
+    --global-footer-bg-color: #151515;
+    --global-border-color: #3b3134;
+  }
+
+  .masthead__uga-logo {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    vertical-align: text-bottom;
+    margin-right: 8px;
+  }
+
+  .masthead__menu-item.selected a {
+    border-bottom-color: var(--global-base-color);
+  }
+  .masthead a:hover {
+    color: var(--global-base-color);
+  }
+</style>
 
 <!-- end custom head snippets -->
