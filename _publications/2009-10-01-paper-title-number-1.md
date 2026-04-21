@@ -7,7 +7,7 @@ excerpt: 'This paper is about the number 1. The number 2 is left for future work
 date: 2024-9-1
 venue: 'European Journal of Cancer'
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: '[https://academicpages.github.io/files/paper1.pdf](https://www.sciencedirect.com/science/article/abs/pii/S0959804924008839)'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0959804924008839'
 bibtexurl: 'https://www.sciencedirect.com/sdfe/arp/cite?pii=S0959804924008839&format=text%2Fx-bibtex&withabstract=true'
 citation: 'Darbandi, Nima. (2024). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
