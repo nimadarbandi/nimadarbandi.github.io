@@ -11,6 +11,10 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
+{% assign show_faraz_icon = false %}
+{% if post.collection == 'posts' %}
+  {% assign show_faraz_icon = true %}
+{% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -28,8 +32,24 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
+        {% if show_faraz_icon %}
+          <img
+            src="{{ '/images/faraz-icon.png' | relative_url }}"
+            alt=""
+            width="18"
+            height="18"
+            style="vertical-align: text-bottom; margin-right: 6px;">
+        {% endif %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
+        {% if show_faraz_icon %}
+          <img
+            src="{{ '/images/faraz-icon.png' | relative_url }}"
+            alt=""
+            width="18"
+            height="18"
+            style="vertical-align: text-bottom; margin-right: 6px;">
+        {% endif %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
