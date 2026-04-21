@@ -28,9 +28,8 @@ author:
   employer         : "University of Georgia"
   email            : "darbandi@uga.edu"
 
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0008-4678-9111"   # add if you have
-  pubmed           : ""   # optional
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=-c0jfaUAAAAJ"
+  orcid            : "https://orcid.org/0009-0008-4678-9111"   # add if you have
   researchgate     : "https://www.researchgate.net/profile/Nima-Darbandi"   # optional
 
   github           : "https://github.com/nimadarbandi"
@@ -43,10 +42,10 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0008-4678-9111"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=mohammad+darbandi"
   researchgate     : "https://www.researchgate.net/profile/Nima-Darbandi" # URL
   scopus           : # URL
   zotero           : # URL
@@ -84,7 +83,7 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : darbandi6007 # Username
+  youtube          : NimaDarbandi-y2y # Username
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
