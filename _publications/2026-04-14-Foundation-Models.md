@@ -3,7 +3,7 @@ title: "Foundation Models as Data Engines:Label-Efficient Learning in Modern Com
 collection: publications
 category: conferences
 permalink: /publication/2026-04-14-Foundation-Models
-excerpt: 'This paper is mainly about a systematic review of 285 recent articles focusing on the transformative role of artificial intelligence in breast cancer research between 2024 and 2025. The future work is centered on addressing continuing challenges in the field to further integrate these AI techniques into clinical practice for improved patient care.'
+excerpt: 'This paper introduces a supervision-centered taxonomy that explores how models like SAM and CLIP are used to automatically curate, label, and distill knowledge into efficient student models. This roadmap aims to create self-evolving AI systems that can democratize visual intelligence by autonomously improving through iterative data verification and self-improvement cycles.'
 date: 2026-04-14
 venue: 'AI Revolution: Research, Ethics and Society'
 paperurl: '[https://academicpages.github.io/files/paper3.pdf](https://link.springer.com/chapter/10.1007/978-3-032-13056-3_13)'
