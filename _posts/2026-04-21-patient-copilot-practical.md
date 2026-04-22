@@ -47,15 +47,71 @@ The current implementation is a mobile app built with React Native/Expo, with co
 
 GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/CopilotApp)
 
-## Screenshot placeholders
+## Screenshots from the App
 
-I left these placeholders so screenshots can be dropped in quickly once ready:
+<style>
+  .copilot-phone-grid {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
 
-![Patient Co-Pilot Record tab screenshot](/images/patient-copilot/record-tab.png)
-*TODO: replace with actual Record tab screenshot.*
+  .copilot-phone-frame {
+    background: linear-gradient(180deg, #0a1f2a 0%, #0a1620 100%);
+    border-radius: 28px;
+    padding: 10px 10px 14px;
+    width: min(31%, 270px);
+    min-width: 220px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32), 0 3px 8px rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(125, 221, 214, 0.25);
+  }
 
-![Patient Co-Pilot Docs tab screenshot](/images/patient-copilot/docs-tab.png)
-*TODO: replace with actual Docs tab screenshot.*
+  .copilot-phone-notch {
+    width: 42%;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(160, 199, 210, 0.4);
+    margin: 0 auto 8px;
+  }
 
-![Patient Co-Pilot Reports tab screenshot](/images/patient-copilot/reports-tab.png)
-*TODO: replace with actual Reports tab screenshot.*
+  .copilot-phone-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .copilot-phone-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.55rem;
+    color: #7dddd6;
+  }
+
+  @media (max-width: 900px) {
+    .copilot-phone-frame {
+      width: min(100%, 320px);
+    }
+  }
+</style>
+
+<div class="copilot-phone-grid">
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/recorder.PNG" alt="Patient Co-Pilot recorder screen" />
+    <figcaption class="copilot-phone-caption">Recorder</figcaption>
+  </figure>
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/upload.PNG" alt="Patient Co-Pilot docs upload screen" />
+    <figcaption class="copilot-phone-caption">Docs</figcaption>
+  </figure>
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/reports.PNG" alt="Patient Co-Pilot reports screen" />
+    <figcaption class="copilot-phone-caption">Reports</figcaption>
+  </figure>
+</div>
