@@ -147,7 +147,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "profile.jpeg" # Social media default site image
 og_description           :  "AI for healthcare, computer vision, genomics, and precision medicine research."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
