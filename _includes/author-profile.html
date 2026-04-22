@@ -28,10 +28,7 @@
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop">
-          <img class="sidebar-uga-favicon" src="{{ '/images/UGA-favicon.ico' | relative_url }}" alt="UGA icon">
-          {{ author.employer }}
-        </li>
+        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -174,6 +171,11 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
+      <li>
+        <a href="https://www.uga.edu/" rel="nofollow">
+          <img class="sidebar-uga-logo" src="{{ '/images/UGA.png' | relative_url }}" alt="UGA logo"> UGA
+        </a>
+      </li>
     </ul>
   </div>
 </div>
