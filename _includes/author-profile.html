@@ -18,8 +18,9 @@
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-    <img class="uga-brand-mark" src="{{ '/images/UGA-Brand-Mark.png' | relative_url }}" alt="University of Georgia logo">
-    <a class="uga-brand-link" href="https://www.uga.edu/" rel="nofollow">uga.edu</a>
+    <a class="uga-brand-link" href="https://www.uga.edu/" rel="nofollow">
+      <img class="uga-brand-mark" src="{{ '/images/UGA-Brand-Mark.png' | relative_url }}" alt="University of Georgia logo">
+    </a>
   </div>
 
   <div class="author__urls-wrapper">
