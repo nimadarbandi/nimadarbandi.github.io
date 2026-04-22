@@ -51,11 +51,11 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
 
 I left these placeholders so screenshots can be dropped in quickly once ready:
 
-![Patient Co-Pilot Record tab screenshot](/images/patient-copilot/record-tab.png)
+![Patient Co-Pilot Record tab screenshot](/images/patient-copilot/recorder.png)
 *TODO: replace with actual Record tab screenshot.*
 
-![Patient Co-Pilot Docs tab screenshot](/images/patient-copilot/docs-tab.png)
+![Patient Co-Pilot Docs tab screenshot](/images/patient-copilot/upload.png)
 *TODO: replace with actual Docs tab screenshot.*
 
-![Patient Co-Pilot Reports tab screenshot](/images/patient-copilot/reports-tab.png)
+![Patient Co-Pilot Reports tab screenshot](/images/patient-copilot/reports.png)
 *TODO: replace with actual Reports tab screenshot.*
