@@ -31,8 +31,6 @@
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
-  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
   color: var(--global-text-color-light);
   border-bottom: 1px solid var(--global-border-color);
 
@@ -43,8 +41,7 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
+  font-family: $sans-serif-narrow;
 
   a + a {
     opacity: 0.5;
@@ -60,11 +57,6 @@
 
 .archive__item-title--publication a:hover {
   color: #BA0C2F;
-}
-
-.archive__download-link {
-  font-family: "Merriweather Sans", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
 }
 
 /* remove border*/
