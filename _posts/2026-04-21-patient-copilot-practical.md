@@ -115,3 +115,21 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
     <figcaption class="copilot-phone-caption">Reports</figcaption>
   </figure>
 </div>
+
+<div class="copilot-phone-grid">
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/setup.PNG" alt="Patient Co-Pilot setup screen" />
+    <figcaption class="copilot-phone-caption">Setup</figcaption>
+  </figure>
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/QA.jpg" alt="Patient Co-Pilot report Q and A screen" />
+    <figcaption class="copilot-phone-caption">Report Q&amp;A</figcaption>
+  </figure>
+  <figure class="copilot-phone-frame">
+    <div class="copilot-phone-notch"></div>
+    <img src="/images/summary.PNG" alt="Patient Co-Pilot patient summary screen" />
+    <figcaption class="copilot-phone-caption">Patient Summary</figcaption>
+  </figure>
+</div>
