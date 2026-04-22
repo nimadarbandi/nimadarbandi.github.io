@@ -28,7 +28,7 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title{% if post.collection == 'publications' %} archive__item-title--publication{% endif %}" itemprop="headline">
+    <h2 class="archive__item-title{% if post.collection == 'publications' %} archive__item-title--publication{% endif %}{% if post.collection == 'posts' %} archive__item-title--post{% endif %}" itemprop="headline">
       {% if post.link %}
         {% if post_icon_src %}
           <img

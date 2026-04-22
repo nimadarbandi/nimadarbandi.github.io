@@ -59,6 +59,16 @@
   color: #BA0C2F;
 }
 
+.archive__item-title--post,
+.archive__item-title--post a {
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.archive__item-title--post a:hover {
+  color: #BA0C2F;
+}
+
 /* remove border*/
 .page__content {
 
