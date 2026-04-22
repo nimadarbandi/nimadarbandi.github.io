@@ -213,8 +213,16 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
+}
+
+.sidebar .uga-brand-mark {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px;
 }
 
 .author__urls-wrapper {
