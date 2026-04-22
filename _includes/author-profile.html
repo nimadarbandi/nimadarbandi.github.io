@@ -171,7 +171,12 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
-      <li><a href="https://www.uga.edu/"><img class="sidebar-uga-logo icon-pad-right" src="{{ '/images/UGA-favicon.ico' | relative_url }}" alt="" aria-hidden="true">University of Georgia</a></li>
+      <li class="sidebar-uga-item">
+        <a href="https://www.uga.edu/">
+          <img class="sidebar-uga-logo icon-pad-right" src="{{ '/images/UGA-favicon.ico' | relative_url }}" alt="" aria-hidden="true">
+          <span>University of Georgia</span>
+        </a>
+      </li>
     </ul>
   </div>
 </div>
