@@ -62,9 +62,10 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
   .copilot-phone-frame {
     background: linear-gradient(180deg, #0a1f2a 0%, #0a1620 100%);
     border-radius: 28px;
-    padding: 10px 10px 14px;
+    padding: 10px 10px 8px;
     width: min(31%, 270px);
     min-width: 220px;
+    margin: 0;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32), 0 3px 8px rgba(0, 0, 0, 0.24);
     border: 1px solid rgba(125, 221, 214, 0.25);
   }
@@ -87,7 +88,7 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
   .copilot-phone-caption {
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 0.55rem;
+    margin-top: 0.35rem;
     color: #7dddd6;
   }
 
@@ -119,17 +120,17 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
 <div class="copilot-phone-grid">
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
-    <img src="/images/setup.PNG" alt="Patient Co-Pilot setup screen" />
-    <figcaption class="copilot-phone-caption">Setup</figcaption>
+    <img src="/images/summary.PNG" alt="Patient Co-Pilot patient summary screen" />
+    <figcaption class="copilot-phone-caption">Patient Summary</figcaption>
   </figure>
-  <figure class="copilot-phone-frame">
+    <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/QA.jpg" alt="Patient Co-Pilot report Q and A screen" />
     <figcaption class="copilot-phone-caption">Report Q&amp;A</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
-    <img src="/images/summary.PNG" alt="Patient Co-Pilot patient summary screen" />
-    <figcaption class="copilot-phone-caption">Patient Summary</figcaption>
+    <img src="/images/setup.PNG" alt="Patient Co-Pilot setup screen" />
+    <figcaption class="copilot-phone-caption">Setup</figcaption>
   </figure>
 </div>
