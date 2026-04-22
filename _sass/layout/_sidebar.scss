@@ -222,7 +222,14 @@
   width: 190px;
   max-width: 100%;
   height: auto;
+  margin: 0 0 4px;
+}
+
+.sidebar .uga-brand-link {
+  display: inline-block;
   margin: 0 0 10px;
+  font-size: $type-size-7;
+  text-transform: lowercase;
 }
 
 .author__urls-wrapper {
