@@ -31,6 +31,8 @@
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
   color: var(--global-text-color-light);
   border-bottom: 1px solid var(--global-border-color);
 
@@ -41,7 +43,8 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
 
   a + a {
     opacity: 0.5;
@@ -50,13 +53,18 @@
 
 .archive__item-title--publication,
 .archive__item-title--publication a {
-  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: #494e52;
 }
 
 .archive__item-title--publication a:hover {
   color: #BA0C2F;
+}
+
+.archive__download-link {
+  font-family: "Merriweather Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
 }
 
 /* remove border*/
