@@ -48,6 +48,17 @@
   }
 }
 
+.archive__item-title--publication,
+.archive__item-title--publication a {
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: #494e52;
+}
+
+.archive__item-title--publication a:hover {
+  color: #BA0C2F;
+}
+
 /* remove border*/
 .page__content {
 
