@@ -2,23 +2,25 @@
 
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
-  <div class="footer-uga-wrap">
-    <a class="footer-uga-brand" href="https://www.uga.edu/" rel="nofollow">
-      <img class="footer-uga-wordmark" src="{{ '/images/UGA.png' | relative_url }}" alt="University of Georgia logo">
-    </a>
-    <ul class="footer-uga-links">
-      <li><a href="https://www.uga.edu/" rel="nofollow">UGA.edu</a></li>
-      {% if site.author.github %}
-        <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
-      {% endif %}
-      {% if site.author.bitbucket %}
-        <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}">Bitbucket</a></li>
-      {% endif %}
-      {% if site.atom_feed.hide != true %}
-        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">{{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-      {% endif %}
-    </ul>
-  </div>
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    <li>
+      <a href="https://www.uga.edu/" rel="nofollow">
+        <img class="social-uga-logo" src="{{ '/images/UGA.png' | relative_url }}" alt="UGA logo"> UGA
+      </a>
+    </li>
+    {% if site.author.github %}
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    {% endif %}
+  </ul>
 </div>
 {% endif %}
 
