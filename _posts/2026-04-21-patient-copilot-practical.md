@@ -45,6 +45,8 @@ In short, it acts as a patient companion for organization and education, while p
 
 The current implementation is a mobile app built with React Native/Expo, with core workflows for transcript capture, document import, patient-summary generation, and constrained Q&A.
 
+This project is funded by the **POOIA Scholarship Award** in support of my cancer research direction.
+
 GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/CopilotApp)
 
 ## Screenshots from the App
