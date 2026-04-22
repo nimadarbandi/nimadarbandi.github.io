@@ -29,11 +29,7 @@
       {% endif %}
       {% if author.employer %}
         <li class="author__desktop">
-          {% if author.employer contains "University of Georgia" %}
-            <img class="sidebar-uga-favicon" src="{{ '/images/UGA-favicon.ico' | relative_url }}" alt="UGA icon">
-          {% else %}
-            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>
-          {% endif %}
+          <img class="sidebar-uga-favicon" src="{{ '/images/UGA-favicon.ico' | relative_url }}" alt="UGA icon">
           {{ author.employer }}
         </li>
       {% endif %}
