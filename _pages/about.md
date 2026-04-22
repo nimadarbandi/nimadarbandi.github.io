@@ -15,10 +15,10 @@ My work combines computer vision, machine learning, and large language models to
 ---
 
 ## Research Interests
-- AI for Animal Behaviour Analysis
-- AI for Healthcare and Precision Medicine  
-- Early Disease Detection (especially cancer)  
-- Computer Vision and Multimodal Learning  
+- AI for Animal Behavior Analysis 
+- Early Human/Animal Disease Detection 
+- AI for Healthcare and Precision Medicine 
+- Computer Vision and Multimodal Learning 
 - Foundation Models and Label-Efficient Learning
 
 ---
@@ -34,16 +34,17 @@ My work combines computer vision, machine learning, and large language models to
 ## Selected Publications
 - *Artificial Intelligence Breakthroughs in Early Diagnosis and Precision Treatment of Breast Cancer: A Multimethod Study* (2024)  
 - *Foundation Models as Data Engines:Label-Efficient Learning in Modern Computer Vision* (2026)
-- *Evolutionary Computing Applications and Trends from 2010 to 2025: A Brief Review* (2025)  
+
 
 *(See the Publications page for the full list.)*
 
 ---
 
 ## Ongoing Projects
+- Animal Behavior tracking in multi-sensor/multi-camera environments
 - Patient Copilot for educating patient and help in decision making processes
 - Autonomous data curation using foundation models and Vision-language models
-- Animal Behavior tracking in multi-sensor/multi-camera environments
+
 
 ---
 
