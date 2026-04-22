@@ -49,8 +49,8 @@ GitHub repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/Cop
 
 ## Screenshots from the App
 
-![Patient Co-Pilot Record tab screenshot](/images/patient-copilot/recorder.png)
+![Patient Co-Pilot Record tab screenshot](/images/patient-copilot/recorder-tab.png)
 
-![Patient Co-Pilot Docs tab screenshot](/images/patient-copilot/upload.png)
+![Patient Co-Pilot Docs tab screenshot](/images/patient-copilot/upload-tab.png)
 
-![Patient Co-Pilot Reports tab screenshot](/images/patient-copilot/reports.png)
+![Patient Co-Pilot Reports tab screenshot](/images/patient-copilot/reports-tab.png)
