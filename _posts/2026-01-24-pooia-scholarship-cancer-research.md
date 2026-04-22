@@ -16,4 +16,4 @@ This support helps me continue spending my research effort on cancer-focused wor
 
 I sincerely thank the Professional Organization of Iranian Americans (POOIA) for this recognition and support.
 
-<img src="/images/Pooia-Award.JPG" alt="2026 POOIA Student Scholarship Award certificate" style="display:block; width:100%; max-width:820px; height:auto; margin:1rem auto;" />
+<img src="/images/Pooia-Award-C.JPG" alt="2026 POOIA Student Scholarship Award certificate" style="display:block; width:100%; max-width:820px; height:auto; margin:1rem auto;" />
