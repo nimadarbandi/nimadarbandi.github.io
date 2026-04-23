@@ -12,6 +12,7 @@ skills:
   - Software
   - Animal Data
   - Human Data
+  - Cancer
   - Medical Image
   - Computer Vision
 post_icon: /images/virus.jpg
