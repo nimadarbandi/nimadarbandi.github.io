@@ -8,7 +8,7 @@ tags:
   - graduate school
   - school of computing
 skills:
-  - Academic
+  - Academia
 post_icon: /images/Award.png
 post_icon_width: 30
 ---

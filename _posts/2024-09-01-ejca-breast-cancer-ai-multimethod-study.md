@@ -9,7 +9,7 @@ tags:
   - medical imaging
   - precision medicine
 skills:
-  - Academic
+  - Academia
   - Cancer
   - Human Data
   - Medical Image

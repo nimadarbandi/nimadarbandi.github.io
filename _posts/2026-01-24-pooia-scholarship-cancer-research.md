@@ -8,7 +8,7 @@ tags:
   - pooia
   - healthcare ai
 skills:
-  - Academic
+  - Academia
   - Cancer
   - Human Data
 post_icon: /images/Award.png
