@@ -11,7 +11,7 @@ tags:
 post_icon: /images/poultry.png
 post_icon_width: 30
 ---
-I am excited to announce that I have been accepted as a **Research Assistant** in [**Dr. Guoming Li's Lab**](https://site.caes.uga.edu/isp/) for a **two-year term**, starting **January 12, 2026 (Spring 2026)**.
+I am excited to announce that I have been accepted as a **Research Assistant** in [**Li Lab**](https://site.caes.uga.edu/isp/) for a **two-year term**, starting **January 12, 2026 (Spring 2026)**.
 
 This position is an important step in my research path because it connects Computer Vision, Multi-Camera/Multi-Sensor Systems, data science, AI, and animal health in a high-impact applied setting.
 
