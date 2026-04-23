@@ -11,6 +11,7 @@ skills:
   - Agentic AI
   - Software
   - Human Data
+  - Cancer
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 ---

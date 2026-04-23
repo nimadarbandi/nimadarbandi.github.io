@@ -9,7 +9,7 @@ tags:
   - healthcare ai
 skills:
   - Academic
-  - Cancer Research
+  - Cancer
   - Human Data
 post_icon: /images/Award.png
 post_icon_width: 30
