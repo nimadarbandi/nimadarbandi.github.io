@@ -56,7 +56,7 @@ My work combines computer vision, machine learning, and large language models to
 <div class="about-uga-spotlight">
   <figure>
     <img src="/images/profile-uga.jpg" alt="Nima Darbandi at the University of Georgia with the national championship trophy" />
-    <figcaption>Proud to be part of UGA! National Champions 2021-2!</figcaption>
+    <figcaption> Proud to be part of the UGA Bulldogs. **National Champions 2021–22**</figcaption>
   </figure>
 </div>
 
