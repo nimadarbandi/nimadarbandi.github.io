@@ -9,9 +9,7 @@ tags:
   - foundation models
   - uga
 skills:
-  - Foundation Models
-  - Label-Efficient Learning
-  - Self-Supervised Learning
+  - Academinc
   - Computer Vision
 post_icon: /images/paper.png
 post_icon_width: 30

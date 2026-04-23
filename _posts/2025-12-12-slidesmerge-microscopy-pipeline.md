@@ -9,9 +9,11 @@ tags:
   - ome-tiff
   - computer vision
 skills:
-  - Large-Scale Image Processing
-  - OME-TIFF Pipelines
-  - Scientific Python
+  - Software
+  - Animal Data
+  - Human Data
+  - Medical Image Proc
+  - Computer Vision
 post_icon: /images/virus.jpg
 post_icon_width: 30
 ---

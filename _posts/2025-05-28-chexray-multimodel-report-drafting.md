@@ -9,9 +9,10 @@ tags:
   - radiology
   - llm
 skills:
+  - Software
+  - Human Data
   - Agentic AI 
-  - Medical Imaging AI
-  - LangGraph Orchestration
+  - Medical Image Proc
 post_icon: /images/chexray.png
 post_icon_width: 30
 ---

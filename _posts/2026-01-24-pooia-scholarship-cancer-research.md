@@ -7,6 +7,10 @@ tags:
   - cancer research
   - pooia
   - healthcare ai
+skills:
+  - Academic
+  - Cancer Research
+  - Human Data
 post_icon: /images/Award.png
 post_icon_width: 30
 ---

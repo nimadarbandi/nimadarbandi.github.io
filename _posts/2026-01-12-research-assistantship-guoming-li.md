@@ -9,7 +9,8 @@ tags:
   - behavior analysis
   - early disease detection
 skills:
-  - Animal Data Analytics
+  - Academic
+  - Animal Data
   - Computer Vision
   - Multi-Sensor Integration
   - Early Disease Detection

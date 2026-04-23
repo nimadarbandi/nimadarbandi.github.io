@@ -7,6 +7,8 @@ tags:
   - teaching
   - graduate school
   - school of computing
+skills:
+  - Academic
 post_icon: /images/Award.png
 post_icon_width: 30
 ---
