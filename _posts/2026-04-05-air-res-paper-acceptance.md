@@ -9,7 +9,7 @@ tags:
   - foundation models
   - uga
 post_icon: /images/paper.png
-post_icon_width: 20
+post_icon_width: 30
 ---
 I am pleased to share that our paper has been accepted at the **2026 International Conference on the AI Revolution: Research, Ethics, and Society (AIR-RES 2026)** for both **publication in the proceedings** and **conference presentation**.
 
