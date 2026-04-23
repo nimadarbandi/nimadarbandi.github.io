@@ -12,53 +12,6 @@ I am a Ph.D. student in Computer Science at the University of Georgia, working a
 
 My work combines computer vision, machine learning, and large language models to build self-improving systems that can learn from limited data and adapt to real-world environments.
 
-<style>
-  .about-uga-spotlight {
-    margin: 1.6rem 0 1.9rem;
-    padding: 0.95rem;
-    border-radius: 18px;
-    background: linear-gradient(160deg, rgba(186, 12, 47, 0.08) 0%, rgba(255, 255, 255, 0.98) 42%, rgba(0, 0, 0, 0.04) 100%);
-    border: 1px solid rgba(186, 12, 47, 0.28);
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.13);
-  }
-
-  .about-uga-spotlight figure {
-    margin: 0;
-  }
-
-  .about-uga-spotlight img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  }
-
-  .about-uga-spotlight figcaption {
-    margin-top: 0.55rem;
-    text-align: center;
-    font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.88rem;
-    color: #6f7780;
-  }
-
-  @media (max-width: 680px) {
-    .about-uga-spotlight {
-      margin: 1.2rem 0 1.5rem;
-      padding: 0.62rem;
-      border-radius: 14px;
-    }
-  }
-</style>
-
-<div class="about-uga-spotlight">
-  <figure>
-    <img src="/images/profile-uga.jpg" alt="Nima Darbandi at the University of Georgia with the national championship trophy" />
-    <figcaption>A proud UGA moment.</figcaption>
-  </figure>
-</div>
-
 ---
 
 ## Research Interests
