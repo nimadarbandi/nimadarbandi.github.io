@@ -9,7 +9,7 @@ tags:
   - foundation models
   - uga
 skills:
-  - Academinc
+  - Academic
   - Computer Vision
 post_icon: /images/paper.png
 post_icon_width: 30
