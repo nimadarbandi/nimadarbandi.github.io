@@ -13,8 +13,14 @@
 {% endif %}
 {% assign post_icon_src = post.post_icon %}
 {% assign post_icon_width = post.post_icon_width | default: 30 %}
+{% assign post_skill_slugs = "" %}
+{% if post.skills %}
+  {% for skill in post.skills %}
+    {% capture post_skill_slugs %}{{ post_skill_slugs }}{{ skill | slugify }}{% unless forloop.last %},{% endunless %}{% endcapture %}
+  {% endfor %}
+{% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: "list" }}__item js-post-item" data-post-skills="{{ post_skill_slugs }}">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
