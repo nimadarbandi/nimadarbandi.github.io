@@ -12,7 +12,7 @@ skills:
   - Academic
   - Animal Data
   - Computer Vision
-  - Multi-Sensor Integration
+  - Multi-Sensor
   - Early Disease Detection
 post_icon: /images/UGA-logo.png
 post_icon_width: 30

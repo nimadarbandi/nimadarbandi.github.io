@@ -12,7 +12,7 @@ skills:
   - Software
   - Animal Data
   - Human Data
-  - Medical Image Proc
+  - Medical Image
   - Computer Vision
 post_icon: /images/virus.jpg
 post_icon_width: 30

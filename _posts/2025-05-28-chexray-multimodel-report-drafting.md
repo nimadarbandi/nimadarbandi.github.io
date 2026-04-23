@@ -12,7 +12,7 @@ skills:
   - Software
   - Human Data
   - Agentic AI 
-  - Medical Image Proc
+  - Medical Image
 post_icon: /images/chexray.png
 post_icon_width: 30
 ---
