@@ -129,6 +129,24 @@
   }
 }
 
+.archive__meta-sep {
+  margin: 0 0.35rem;
+}
+
+.archive__meta-skills {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  vertical-align: middle;
+}
+
+.archive__meta-skills .page__skill-chip {
+  background: rgba(186, 12, 47, 0.08);
+  padding: 0.12rem 0.45rem;
+  margin: 0;
+}
+
 
 /*
    Grid view

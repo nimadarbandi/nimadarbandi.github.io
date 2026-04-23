@@ -66,8 +66,25 @@
       {% endif %}
     </h2>
     
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% assign show_archive_skills = false %}
+    {% if post.skills and page.permalink == "/year-archive/" %}
+      {% assign show_archive_skills = true %}
+    {% endif %}
+    {% if post.read_time or show_archive_skills %}
+      <p class="page__meta">
+        {% if post.read_time %}
+          <i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+        {% endif %}
+        {% if show_archive_skills %}
+          {% if post.read_time %}<span class="archive__meta-sep"> · </span>{% endif %}
+          <span class="archive__meta-skills">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            {% for skill in post.skills %}
+              <span class="page__skill-chip">{{ skill }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </p>
     {% endif %}
 
         {% if post.collection == 'teaching' %}
