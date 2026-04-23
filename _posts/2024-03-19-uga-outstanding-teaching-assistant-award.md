@@ -7,7 +7,7 @@ tags:
   - teaching
   - graduate school
   - school of computing
-post_icon: /images/UGA-logo.png
+post_icon: /images/Award.png
 post_icon_width: 30
 ---
 I am honored to share that I received the **UGA Outstanding Teaching Assistant Award (Spring 2024)** from the School of Computing.

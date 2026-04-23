@@ -8,7 +8,7 @@ tags:
   - animal genomics
   - behavior analysis
   - early disease detection
-post_icon: /images/isp-logo.png
+post_icon: /images/UGA-logo.png
 post_icon_width: 30
 ---
 I am excited to announce that I have been accepted as a **Research Assistant** in [**ISP Lab**](https://site.caes.uga.edu/isp/) for a **two-year term**, starting **January 12, 2026 (Spring 2026)**.
