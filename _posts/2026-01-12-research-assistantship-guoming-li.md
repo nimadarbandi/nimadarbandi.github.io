@@ -1,5 +1,5 @@
 ---
-title: "Accepted as Research Assistant in Li Lab (Spring 2026)"
+title: "Accepted as Research Assistant in Li Lab"
 date: 2026-01-12
 permalink: /posts/2026/01/research-assistantship-guoming-li/
 tags:
