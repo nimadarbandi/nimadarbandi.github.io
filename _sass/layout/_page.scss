@@ -246,6 +246,32 @@
   text-transform: uppercase;
 }
 
+.page__skills {
+  margin-top: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.page__skills-label {
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $type-size-6;
+  color: var(--global-text-color);
+}
+
+.page__skill-chip {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: rgba(186, 12, 47, 0.06);
+  color: #494e52;
+  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.25;
+}
+
 
 /*
    Page taxonomy

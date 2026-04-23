@@ -7,6 +7,11 @@ tags:
   - patient education
   - clinical workflow
   - patient tools
+skills:
+  - Agentic AI
+  - Mobile App Development
+  - Clinical Data Structuring
+  - Patient Education Design
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 ---

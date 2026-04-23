@@ -8,6 +8,10 @@ tags:
   - ai
   - radiology
   - llm
+skills:
+  - Agentic AI 
+  - Medical Imaging AI
+  - LangGraph Orchestration
 post_icon: /images/chexray.png
 post_icon_width: 30
 ---

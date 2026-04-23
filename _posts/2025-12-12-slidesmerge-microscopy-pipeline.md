@@ -8,6 +8,10 @@ tags:
   - computational pathology
   - ome-tiff
   - computer vision
+skills:
+  - Large-Scale Image Processing
+  - OME-TIFF Pipelines
+  - Scientific Python
 post_icon: /images/virus.jpg
 post_icon_width: 30
 ---

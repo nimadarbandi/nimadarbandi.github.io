@@ -8,6 +8,11 @@ tags:
   - animal genomics
   - behavior analysis
   - early disease detection
+skills:
+  - Animal Data Analytics
+  - Computer Vision
+  - Multi-Sensor Integration
+  - Early Disease Detection
 post_icon: /images/UGA-logo.png
 post_icon_width: 30
 ---
