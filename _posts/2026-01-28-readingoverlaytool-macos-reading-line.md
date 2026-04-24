@@ -1,6 +1,6 @@
 ---
 title: "ReadingOverlayTool: A Swift macOS Reading Line Overlay for PDFs"
-date: 2026-04-24
+date: 2026-01-28
 permalink: /posts/2026/04/readingoverlaytool-macos-reading-line/
 tags:
   - swift
