@@ -12,7 +12,7 @@ skills:
 post_icon: /images/swift.png
 post_icon_width: 30
 ---
-I developed **ReadingOverlayTool** to make long PDF reading sessions on macOS easier and less fatiguing.
+I developed **ReadingOverlayTool** to make long PDF reading sessions on macOS easier and less fatiguing. Super useful for putting less strain on eyes while reading long papers in any room lighting conditions.
 
 The app provides an always-on-top reading overlay that helps keep focus on the current line while dimming the rest of the page.
 
