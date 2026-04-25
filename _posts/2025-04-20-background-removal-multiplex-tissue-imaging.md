@@ -12,7 +12,7 @@ skills:
   - Software
   - Cancer
   - Human Data
-  - Anima Data
+  - Animal Data
   - Medical Image
   - Computer Vision
 post_icon: /images/before-slide.jpg
@@ -39,39 +39,46 @@ This workspace combines comparative methods and custom cleanup scripts into an a
 
 ## Before vs. after cleanup
 <style>
-  .slide-compare-grid {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  .slide-compare-frame {
     margin-top: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 0.6rem;
+  }
+  .slide-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    align-items: start;
   }
   .slide-compare-card {
-    width: min(100%, 520px);
     margin: 0;
   }
   .slide-compare-card img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .slide-compare-card figcaption {
     text-align: center;
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
+    margin-top: 0.15rem;
+    font-size: 0.78rem;
+    line-height: 1.1;
   }
 </style>
 
-<div class="slide-compare-grid">
-  <figure class="slide-compare-card">
-    <img src="/images/before-slide.jpg" alt="Multiplex tissue image before background and artifact removal" />
-    <figcaption>Before cleanup</figcaption>
-  </figure>
-  <figure class="slide-compare-card">
-    <img src="/images/after-slide.jpg" alt="Multiplex tissue image after background and artifact removal" />
-    <figcaption>After cleanup</figcaption>
-  </figure>
+<div class="slide-compare-frame">
+  <div class="slide-compare-grid">
+    <figure class="slide-compare-card">
+      <img src="/images/before-slide.jpg" alt="Multiplex tissue image before background and artifact removal" />
+      <figcaption>Before cleanup</figcaption>
+    </figure>
+    <figure class="slide-compare-card">
+      <img src="/images/after-slide.jpg" alt="Multiplex tissue image after background and artifact removal" />
+      <figcaption>After cleanup</figcaption>
+    </figure>
+  </div>
 </div>
 
 
