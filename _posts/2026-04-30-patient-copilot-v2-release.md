@@ -144,17 +144,17 @@ Patient Co-Pilot remains an informational patient companion:
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/1.PNG" alt="Patient Co-Pilot v2 screenshot 1" />
-    <figcaption class="copilot-phone-caption">Screenshot 1</figcaption>
+    <figcaption class="copilot-phone-caption">Home</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/2.PNG" alt="Patient Co-Pilot v2 screenshot 2" />
-    <figcaption class="copilot-phone-caption">Screenshot 2</figcaption>
+    <figcaption class="copilot-phone-caption">Home-Settings</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/3.PNG" alt="Patient Co-Pilot v2 screenshot 3" />
-    <figcaption class="copilot-phone-caption">Screenshot 3</figcaption>
+    <figcaption class="copilot-phone-caption">Docs-Import</figcaption>
   </figure>
 </div>
 
@@ -162,17 +162,17 @@ Patient Co-Pilot remains an informational patient companion:
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/4.PNG" alt="Patient Co-Pilot v2 screenshot 4" />
-    <figcaption class="copilot-phone-caption">Screenshot 4</figcaption>
+    <figcaption class="copilot-phone-caption">Docs-LoadedFiles</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/5.PNG" alt="Patient Co-Pilot v2 screenshot 5" />
-    <figcaption class="copilot-phone-caption">Screenshot 5</figcaption>
+    <figcaption class="copilot-phone-caption">Docs-Summarize</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/6.PNG" alt="Patient Co-Pilot v2 screenshot 6" />
-    <figcaption class="copilot-phone-caption">Screenshot 6</figcaption>
+    <figcaption class="copilot-phone-caption">Voices-Recorder</figcaption>
   </figure>
 </div>
 
@@ -180,17 +180,17 @@ Patient Co-Pilot remains an informational patient companion:
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/7.PNG" alt="Patient Co-Pilot v2 screenshot 7" />
-    <figcaption class="copilot-phone-caption">Screenshot 7</figcaption>
+    <figcaption class="copilot-phone-caption">Voices-Transcriber</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/8.PNG" alt="Patient Co-Pilot v2 screenshot 8" />
-    <figcaption class="copilot-phone-caption">Screenshot 8</figcaption>
+    <figcaption class="copilot-phone-caption">Reports-PatientReport</figcaption>
   </figure>
   <figure class="copilot-phone-frame">
     <div class="copilot-phone-notch"></div>
     <img src="/images/9.PNG" alt="Patient Co-Pilot v2 screenshot 9" />
-    <figcaption class="copilot-phone-caption">Screenshot 9</figcaption>
+    <figcaption class="copilot-phone-caption">Reports-ChatBot</figcaption>
   </figure>
 </div>
 
