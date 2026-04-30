@@ -1,5 +1,5 @@
 ---
-title: "Patient Co-Pilot v2: Multi-AI, Apple Health, and Better Patient Workflows"
+title: "Patient Co-Pilot v2: Multi-AI, Apple Health Monitoring, and API Key Donation Workflow"
 date: 2026-04-30
 permalink: /posts/2026/04/patient-copilot-v2-release/
 tags:
@@ -16,12 +16,7 @@ skills:
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 ---
-I am publishing **Patient Co-Pilot v2**, a practical update focused on helping patients handle complex care information with less confusion and better visit preparation.
-
-Repository: [nimadarbandi/CopilotApp](https://github.com/nimadarbandi/CopilotApp)
-
-Public beta (TestFlight): [Join Patient Co-Pilot Beta](https://testflight.apple.com/join/pvRks2nM)
-
+I am publishing **Patient Co-Pilot v2 Beta**, a practical update focused on helping patients handle complex care information with less confusion and better visit preparation.
 
 ## What is new in v2
 
@@ -71,3 +66,5 @@ Patient Co-Pilot remains an informational patient companion:
 - It emphasizes source-grounded summaries and reviewed inputs.
 - It keeps patient education and clinical decision roles clearly separated.
 
+
+Public beta (TestFlight): [Join Patient Co-Pilot Beta](https://testflight.apple.com/join/pvRks2nM)
