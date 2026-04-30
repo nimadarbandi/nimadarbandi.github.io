@@ -1,5 +1,5 @@
 ---
-title: "Patient Co-Pilot v2: Multi-AI, Apple Health Monitoring, and API Key Donation Workflow"
+title: "Patient Co-Pilot v2: Multi-AI, Apple Health Monitoring, Source-grounded ChatBot"
 date: 2026-04-30
 permalink: /posts/2026/04/patient-copilot-v2-release/
 tags:
@@ -36,7 +36,7 @@ This version is built for real patient workflows, especially when care is spread
 
 Patient Co-Pilot v2 is organized around four app areas:
 
-- `Record`: record/import audio, transcribe visits, review transcript, and save follow-up questions.
+- `Voices`: record/import audio, transcribe visits, review transcript, and save follow-up questions.
 - `Docs`: import reports/files, summarize selected files, manage timeline events, and validate transcript metadata.
 - `Reports`: generate a structured patient report, export patient/clinician CSV, and use source-grounded Q&A.
 - `Home`: configure providers/models, manage wearable sync settings, and run backup/restore.
