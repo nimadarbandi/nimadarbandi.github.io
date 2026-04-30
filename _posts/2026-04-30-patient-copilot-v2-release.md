@@ -16,7 +16,8 @@ skills:
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 ---
-I am publishing **Patient Co-Pilot v2 Beta**, a practical update focused on helping patients handle complex care information with less confusion and better visit preparation.
+
+I am publishing **Patient Co-Pilot v2 Beta**, a practical update focused on Multi-AI support and Symptom Monitoring. Download link for the Beta version is included.
 
 ## What is new in v2
 
