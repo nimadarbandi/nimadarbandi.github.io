@@ -15,7 +15,7 @@ skills:
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 ---
-I built **Patient Co-Pilot** mobile app to solve a very practical patient problem: confused with too much medical information, spread across too many places, from too many doctors.
+I built **Patient Co-Pilot** mobile app to solve a common patient problem: confused with too much medical information, spread across too many places, from too many doctors.
 
 When patients are dealing with multiple visits, reports, and prescriptions, it is hard to track what matters, what changed, and what to ask the doctor next. This app helps patients keep their information together, understand their care plan better, and show up prepared for clinical discussions.
 
