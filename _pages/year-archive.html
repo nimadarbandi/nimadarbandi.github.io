@@ -19,32 +19,39 @@ redirect_from:
 {% assign post_skills = skills_blob | split: "|||" | uniq | sort %}
 
 <style>
+  /* ── Filter bar ───────────────────────────────────────── */
   .post-skill-filter {
-    margin: 0.5rem 0 1.1rem;
+    margin: 0.2rem 0 1.4rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.4rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--global-border-color);
   }
   .post-skill-filter button {
     appearance: none;
-    border: 1px solid var(--global-border-color);
-    background: rgba(0, 0, 0, 0.05);
-    color: #494e52;
+    border: 1.5px solid #d5d8db;
+    background: #fff;
+    color: #555;
     border-radius: 999px;
-    padding: 0.24rem 0.65rem;
+    padding: 0.28rem 0.75rem;
     line-height: 1.3;
     font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.86rem;
+    font-size: 0.82rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s, box-shadow 0.15s;
   }
   .post-skill-filter button:hover {
     border-color: #BA0C2F;
     color: #BA0C2F;
+    box-shadow: 0 0 0 3px rgba(186, 12, 47, 0.08);
   }
   .post-skill-filter button.is-active {
     background: #BA0C2F;
     border-color: #BA0C2F;
     color: #fff;
+    box-shadow: 0 2px 8px rgba(186, 12, 47, 0.22);
   }
   .filter-count {
     display: inline-flex;
@@ -54,10 +61,10 @@ redirect_from:
     height: 1.15rem;
     padding: 0 0.28rem;
     border-radius: 999px;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
     line-height: 1;
-    background: rgba(0, 0, 0, 0.11);
+    background: rgba(0, 0, 0, 0.10);
     color: inherit;
     margin-left: 0.3rem;
     vertical-align: middle;
@@ -67,6 +74,99 @@ redirect_from:
   .post-skill-filter button.is-active .filter-count {
     background: rgba(255, 255, 255, 0.28);
     color: #fff;
+  }
+
+  /* ── Year headers ─────────────────────────────────────── */
+  .archive .archive__subtitle {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #b0b5ba;
+    border-bottom: none;
+    margin: 1.8rem 0 0.65rem;
+    padding-bottom: 0;
+  }
+
+  /* ── Post cards ───────────────────────────────────────── */
+  @keyframes postFadeUp {
+    from { opacity: 0; transform: translateY(7px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .archive .list__item {
+    padding-right: 0 !important;
+    margin-bottom: 0.6rem;
+  }
+
+  .archive .list__item .archive__item {
+    background: #fff;
+    border: 1px solid #e8eaec;
+    border-left: 3px solid transparent;
+    border-radius: 10px;
+    padding: 0.9rem 1.15rem 0.8rem;
+    transition: border-left-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.055);
+  }
+
+  .archive .list__item .archive__item:hover {
+    border-left-color: #BA0C2F;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .archive .list__item .archive__item:hover .archive__item-title {
+    text-decoration: none;
+  }
+
+  .archive .list__item .archive__item-title {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .archive .list__item .archive__item-title a {
+    text-decoration: none;
+    color: #2c3038;
+    transition: color 0.15s;
+  }
+
+  .archive .list__item .archive__item:hover .archive__item-title a {
+    color: #BA0C2F;
+    text-decoration: none;
+  }
+
+  .archive .list__item .page__meta {
+    margin: 0 0 0.3rem;
+    font-size: 0.78rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 0.3rem;
+  }
+
+  .archive .list__item .page__date {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+
+  .archive .list__item .page__date strong {
+    font-weight: 500;
+    color: #ccc;
+  }
+
+  .archive .list__item .archive__meta-skills .page__skill-chip {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.42rem;
+    border-radius: 999px;
+    background: rgba(186, 12, 47, 0.07);
+    color: #BA0C2F;
+  }
+
+  .archive .list__item.post-anim {
+    animation: postFadeUp 0.22s ease both;
   }
 </style>
 
@@ -155,7 +255,15 @@ redirect_from:
     function applyFilter(skillSlug) {
       postItems.forEach((item) => {
         const visible = skillSlug === "all" || hasSkill(item, skillSlug);
-        item.style.display = visible ? "" : "none";
+        if (visible) {
+          item.style.display = "";
+          item.classList.remove("post-anim");
+          void item.offsetWidth;
+          item.classList.add("post-anim");
+        } else {
+          item.style.display = "none";
+          item.classList.remove("post-anim");
+        }
       });
 
       buttons.forEach((btn) => {
