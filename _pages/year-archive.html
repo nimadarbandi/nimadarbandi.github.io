@@ -46,14 +46,35 @@ redirect_from:
     border-color: #BA0C2F;
     color: #fff;
   }
+  .filter-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.15rem;
+    height: 1.15rem;
+    padding: 0 0.28rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.11);
+    color: inherit;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    transition: background 0.15s, color 0.15s;
+  }
+  .post-skill-filter button.is-active .filter-count {
+    background: rgba(255, 255, 255, 0.28);
+    color: #fff;
+  }
 </style>
 
 <div id="post-skill-filter" class="post-skill-filter" aria-label="Filter posts by skill">
-  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All</button>
+  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count"></span></button>
   {% for skill in post_skills %}
     {% assign skill_trim = skill | strip %}
     {% if skill_trim != "" %}
-      <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }}</button>
+      <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count"></span></button>
     {% endif %}
   {% endfor %}
 </div>
@@ -117,6 +138,17 @@ redirect_from:
       btn.addEventListener("click", function () {
         applyFilter(btn.getAttribute("data-skill"));
       });
+    });
+
+    // Populate count badges
+    const allBadge = filterRoot.querySelector('[data-skill="all"] .filter-count');
+    if (allBadge) allBadge.textContent = postItems.length;
+
+    buttons.forEach((btn) => {
+      const skill = btn.getAttribute("data-skill");
+      if (skill === "all") return;
+      const badge = btn.querySelector(".filter-count");
+      if (badge) badge.textContent = postItems.filter((item) => hasSkill(item, skill)).length;
     });
 
     applyFilter("all");
