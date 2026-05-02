@@ -19,7 +19,7 @@ post_icon: /images/virus.jpg
 post_icon_width: 30
 ---
 
-I pushed a new version of **slidesMerge** with several practical improvements based on real-world use. The core pipeline — coarse alignment, contour refinement, tiled warping, multi-channel merge — is unchanged. What changed is how the pipeline is configured, how it handles edge cases in tissue detection, and how it surfaces failures.
+I pushed a new version of **slidesMerge** with several practical improvements based on real-world use. The core pipeline (coarse alignment, contour refinement, tiled warping, multi-channel merge) is unchanged. What changed is how the pipeline is configured, how it handles edge cases in tissue detection, and how it surfaces failures.
 
 Repository: [nimadarbandi/slidesMerge](https://github.com/nimadarbandi/slidesMerge)
 
