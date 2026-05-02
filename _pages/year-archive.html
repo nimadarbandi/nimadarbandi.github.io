@@ -62,6 +62,7 @@ redirect_from:
     margin-left: 0.3rem;
     vertical-align: middle;
     transition: background 0.15s, color 0.15s;
+    pointer-events: none;
   }
   .post-skill-filter button.is-active .filter-count {
     background: rgba(255, 255, 255, 0.28);
@@ -70,11 +71,17 @@ redirect_from:
 </style>
 
 <div id="post-skill-filter" class="post-skill-filter" aria-label="Filter posts by skill">
-  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count"></span></button>
+  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count">{{ site.posts | size }}</span></button>
   {% for skill in post_skills %}
     {% assign skill_trim = skill | strip %}
     {% if skill_trim != "" %}
-      <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count"></span></button>
+      {% assign skill_count = 0 %}
+      {% for post in site.posts %}
+        {% if post.skills contains skill_trim %}
+          {% assign skill_count = skill_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count">{{ skill_count }}</span></button>
     {% endif %}
   {% endfor %}
 </div>
@@ -138,17 +145,6 @@ redirect_from:
       btn.addEventListener("click", function () {
         applyFilter(btn.getAttribute("data-skill"));
       });
-    });
-
-    // Populate count badges
-    const allBadge = filterRoot.querySelector('[data-skill="all"] .filter-count');
-    if (allBadge) allBadge.textContent = postItems.length;
-
-    buttons.forEach((btn) => {
-      const skill = btn.getAttribute("data-skill");
-      if (skill === "all") return;
-      const badge = btn.querySelector(".filter-count");
-      if (badge) badge.textContent = postItems.filter((item) => hasSkill(item, skill)).length;
     });
 
     applyFilter("all");
