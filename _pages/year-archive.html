@@ -92,13 +92,20 @@ redirect_from:
 
 <div id="post-skill-filter" class="post-skill-filter" aria-label="Filter posts by skill">
   <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count">{{ site.posts | size }}</span></button>
+  {% assign academia_count = 0 %}
+  {% for post in site.posts %}
+    {% if post.skills contains "Academia" %}
+      {% assign academia_count = academia_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <button type="button" data-skill="academia" aria-pressed="false">Academia <span class="filter-count">{{ academia_count }}</span></button>
   {% for entry in sorted_skill_entries %}
     {% assign entry_trim = entry | strip %}
     {% if entry_trim != "" %}
       {% assign entry_parts = entry_trim | split: "|||" %}
       {% assign skill_count = entry_parts[0] | plus: 0 %}
       {% assign skill_trim = entry_parts[1] %}
-      {% if skill_trim != "" %}
+      {% if skill_trim != "" and skill_trim != "Academia" %}
         <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count">{{ skill_count }}</span></button>
       {% endif %}
     {% endif %}
