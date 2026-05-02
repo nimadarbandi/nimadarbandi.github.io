@@ -70,18 +70,37 @@ redirect_from:
   }
 </style>
 
+{% assign skill_sort_blob = "" %}
+{% for skill in post_skills %}
+  {% assign skill_trim = skill | strip %}
+  {% if skill_trim != "" %}
+    {% assign skill_count = 0 %}
+    {% for post in site.posts %}
+      {% if post.skills contains skill_trim %}
+        {% assign skill_count = skill_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if skill_count < 10 %}
+      {% capture sort_key %}0{{ skill_count }}{% endcapture %}
+    {% else %}
+      {% capture sort_key %}{{ skill_count }}{% endcapture %}
+    {% endif %}
+    {% capture skill_sort_blob %}{{ skill_sort_blob }}{{ sort_key }}|||{{ skill_trim }}__ENTRY__{% endcapture %}
+  {% endif %}
+{% endfor %}
+{% assign sorted_skill_entries = skill_sort_blob | split: "__ENTRY__" | sort | reverse %}
+
 <div id="post-skill-filter" class="post-skill-filter" aria-label="Filter posts by skill">
   <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count">{{ site.posts | size }}</span></button>
-  {% for skill in post_skills %}
-    {% assign skill_trim = skill | strip %}
-    {% if skill_trim != "" %}
-      {% assign skill_count = 0 %}
-      {% for post in site.posts %}
-        {% if post.skills contains skill_trim %}
-          {% assign skill_count = skill_count | plus: 1 %}
-        {% endif %}
-      {% endfor %}
-      <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count">{{ skill_count }}</span></button>
+  {% for entry in sorted_skill_entries %}
+    {% assign entry_trim = entry | strip %}
+    {% if entry_trim != "" %}
+      {% assign entry_parts = entry_trim | split: "|||" %}
+      {% assign skill_count = entry_parts[0] | plus: 0 %}
+      {% assign skill_trim = entry_parts[1] %}
+      {% if skill_trim != "" %}
+        <button type="button" data-skill="{{ skill_trim | slugify }}" aria-pressed="false">{{ skill_trim }} <span class="filter-count">{{ skill_count }}</span></button>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </div>
