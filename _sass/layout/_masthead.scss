@@ -66,7 +66,17 @@
   }
 }
 
-.masthead__menu-item.selected a {
+/* site title stays dark when on homepage */
+.masthead__menu-item--lg.selected a {
+  color: var(--global-masthead-link-color);
+  font-weight: 700;
+  border-bottom: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* nav items get red underline when active */
+.masthead__menu-item.selected:not(.masthead__menu-item--lg) a {
   color: #BA0C2F;
   font-weight: 700;
   border-bottom: 2px solid #BA0C2F;
@@ -74,7 +84,7 @@
   cursor: default;
 }
 
-.masthead__menu-item.selected a:hover {
+.masthead__menu-item.selected:not(.masthead__menu-item--lg) a:hover {
   color: #BA0C2F;
   border-bottom: 2px solid #BA0C2F;
 }

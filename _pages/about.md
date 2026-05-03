@@ -15,7 +15,7 @@ redirect_from:
     font-size: 1.02em;
     line-height: 1.78;
     color: #2a2e33;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.5rem;
   }
 
   .about-section {
@@ -44,8 +44,8 @@ redirect_from:
     align-items: center;
     padding: 0.28rem 0.7rem;
     border-radius: 999px;
-    border: 1px solid #dde0e4;
-    background: #f9fafb;
+    border: 1px solid rgba(186, 12, 47, 0.2);
+    background: rgba(186, 12, 47, 0.04);
     font-size: 0.84em;
     color: #2a2e33;
     font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,8 +55,8 @@ redirect_from:
   }
 
   .interest-chip:hover {
-    border-color: #BA0C2F;
-    background: rgba(186, 12, 47, 0.04);
+    border-color: rgba(186, 12, 47, 0.5);
+    background: rgba(186, 12, 47, 0.08);
   }
 
   .about-list {
