@@ -51,7 +51,7 @@ redirect_from:
     font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.3;
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
     transition: border-color 0.15s, background 0.15s, color 0.15s;
   }
@@ -60,7 +60,7 @@ redirect_from:
     border-color: rgba(186, 12, 47, 0.5);
     background: rgba(186, 12, 47, 0.08);
     color: #BA0C2F;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   .about-list {
