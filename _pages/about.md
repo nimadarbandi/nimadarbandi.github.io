@@ -51,12 +51,16 @@ redirect_from:
     font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.3;
-    transition: border-color 0.15s, background 0.15s;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
   }
 
   .interest-chip:hover {
     border-color: rgba(186, 12, 47, 0.5);
     background: rgba(186, 12, 47, 0.08);
+    color: #BA0C2F;
+    text-decoration: none;
   }
 
   .about-list {
@@ -138,11 +142,11 @@ redirect_from:
 <div class="about-section">
   <h2>Research Interests</h2>
   <div class="interest-chips">
-    <span class="interest-chip">AI for Animal Behavior Analysis</span>
-    <span class="interest-chip">Early Disease Detection</span>
-    <span class="interest-chip">AI for Healthcare &amp; Precision Medicine</span>
-    <span class="interest-chip">Computer Vision &amp; Multimodal Learning</span>
-    <span class="interest-chip">Foundation Models &amp; Label-Efficient Learning</span>
+    <a class="interest-chip" href="/year-archive/">AI for Animal Behavior Analysis</a>
+    <a class="interest-chip" href="/year-archive/">Early Disease Detection</a>
+    <a class="interest-chip" href="/year-archive/">AI for Healthcare &amp; Precision Medicine</a>
+    <a class="interest-chip" href="/year-archive/">Computer Vision &amp; Multimodal Learning</a>
+    <a class="interest-chip" href="/year-archive/">Foundation Models &amp; Label-Efficient Learning</a>
   </div>
 </div>
 
