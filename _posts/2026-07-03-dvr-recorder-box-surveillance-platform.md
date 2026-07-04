@@ -48,11 +48,21 @@ I see this project as more than a simple DVR companion. It is a footage-handling
 GitHub repository:
 [nimadarbandi/DVR-Recorder](https://github.com/nimadarbandi/DVR-Recorder/tree/main/linux)
 
+## Inside the DVR box
+
+The images below show how the DVR Recorder Box looks internally as a compact, practical recording unit.
+
+<div style="display:flex; gap:1rem; align-items:flex-start; justify-content:center; flex-wrap:wrap; margin:1rem 0;">
+  <img src="/images/dvr1.jpeg" alt="Inside view of DVR Recorder Box showing hardware layout" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
+  <img src="/images/dvr2.jpeg" alt="Inside view of DVR Recorder Box showing internal components" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
+  <img src="/images/dvr3.jpeg" alt="Inside view of DVR Recorder Box showing assembled internal structure" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
+</div>
+
 ## Build video
 
 The video below is the final demo in this post and shows how the DVR Recorder Box itself was created.
 
-<video controls playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
+<video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
   <source src="/videos/dvr-box.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
