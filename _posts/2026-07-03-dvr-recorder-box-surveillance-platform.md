@@ -52,10 +52,10 @@ GitHub repository:
 
 The images below show how the DVR Recorder Box looks internally as a compact, practical recording unit.
 
-<div style="display:flex; gap:1rem; align-items:flex-start; justify-content:center; flex-wrap:wrap; margin:1rem 0;">
-  <img src="/images/dvr1.jpeg" alt="Inside view of DVR Recorder Box showing hardware layout" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
-  <img src="/images/dvr2.jpeg" alt="Inside view of DVR Recorder Box showing internal components" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
-  <img src="/images/dvr3.jpeg" alt="Inside view of DVR Recorder Box showing assembled internal structure" style="display:block; width:100%; max-width:290px; height:auto; border-radius:12px;" />
+<div style="display:flex; gap:1rem; align-items:stretch; justify-content:center; flex-wrap:nowrap; margin:1.25rem 0; overflow-x:auto; padding-bottom:0.25rem;">
+  <img src="/images/dvr1.jpeg" alt="Inside view of DVR Recorder Box showing hardware layout" style="display:block; width:32%; min-width:220px; height:auto; object-fit:cover; border-radius:16px; border:1px solid rgba(20, 40, 60, 0.12); box-shadow:0 14px 32px rgba(15, 23, 42, 0.14); background:#fff; padding:0.35rem;" />
+  <img src="/images/dvr2.jpeg" alt="Inside view of DVR Recorder Box showing internal components" style="display:block; width:32%; min-width:220px; height:auto; object-fit:cover; border-radius:16px; border:1px solid rgba(20, 40, 60, 0.12); box-shadow:0 14px 32px rgba(15, 23, 42, 0.14); background:#fff; padding:0.35rem;" />
+  <img src="/images/dvr3.jpeg" alt="Inside view of DVR Recorder Box showing assembled internal structure" style="display:block; width:32%; min-width:220px; height:auto; object-fit:cover; border-radius:16px; border:1px solid rgba(20, 40, 60, 0.12); box-shadow:0 14px 32px rgba(15, 23, 42, 0.14); background:#fff; padding:0.35rem;" />
 </div>
 
 ## Build video
