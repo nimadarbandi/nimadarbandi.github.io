@@ -1,5 +1,5 @@
 ---
-title: "Recorder Box: A Practical Surveillance Recording and Footage-Handling Device"
+title: "Recorder Box: A Recording and Footage-Handling Device for video data collection"
 date: 2026-07-03
 permalink: /posts/2026/07/dvr-recorder-box-surveillance-platform/
 tags:
@@ -10,13 +10,15 @@ tags:
   - video systems
   - storage management
 skills:
-  - Software, Device, Computer Vision
+  - Software
+  - Device
+  - Computer Vision
 post_icon: /images/dvr-box.png
 post_icon_width: 34
 ---
-I built **Recorder Box** as a practical recording and storage Device for Computer Vision surveillance environments. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs, cameras - analogue or IP based are involved, especially when a mesh of cameras in large scale environments are involved.
+I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs, a diversity of meshed cameras with different types -- analogue or IP cameras -- are involved and we need a standard output for further computer vision analysis.
 
-This project is designed for heavy duty recording on a compact Linux based embeded device that can sit in the field and keep working as a dependable recording hub that can completely replace NVRs and DVR tasks to capture data and record videos. It supports DVR-based setups, standalone IP cameras, and mixed environments where several video sources need to be handled together.
+This project is implemented on a compact Linux based embeded device that can sit in the field and keep working as a dependable recording hub and can totally replace NVRs and DVR tasks to capture data and record videos. It supports DVR-based setups, standalone IP cameras -- with or without NVRs --, and mixed environments where several video sources need to be handled together as a standard source for further analysis for computer vision projects.
 
 ## Why this system is useful
 
