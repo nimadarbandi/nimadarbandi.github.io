@@ -19,6 +19,11 @@ post_icon_width: 34
 ---
 I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments like animal houses. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs and cameras are involved. A diversity of meshed cameras with different types -- analogue or IP cameras -- and standardized output video files for further computer vision are supported.
 
+<video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
+  <source src="/videos/dvr-box.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 This project is implemented on a compact Linux based embeded device that can sit in the field and keep working as a dependable recording hub and can totally replace NVRs and DVR tasks to capture data and record videos. It supports DVR-based setups, standalone IP cameras -- with or without NVRs --, and mixed environments where several video sources need to be handled together as a standard source for further analysis for computer vision projects.
 
 ## Why this system is useful
@@ -61,31 +66,3 @@ The images below show how the Recorder Box looks internally as a compact, practi
   <img src="/images/dvr2.jpeg" alt="Inside view of DVR Recorder Box showing internal components" style="display:block; width:32%; min-width:220px; height:auto; object-fit:cover; border-radius:16px; border:1px solid rgba(20, 40, 60, 0.12); box-shadow:0 14px 32px rgba(15, 23, 42, 0.14); background:#fff; padding:0.35rem;" />
   <img src="/images/dvr3.jpeg" alt="Inside view of DVR Recorder Box showing assembled internal structure" style="display:block; width:32%; min-width:220px; height:auto; object-fit:cover; border-radius:16px; border:1px solid rgba(20, 40, 60, 0.12); box-shadow:0 14px 32px rgba(15, 23, 42, 0.14); background:#fff; padding:0.35rem;" />
 </div>
-
-## Build video
-
-The video below shows how the Recorder Box itself was created by me in Dr. Guoming Li Lab:
-
-<video id="recorder-box-build-video" controls muted loop playsinline preload="metadata" style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
-  <source src="/videos/dvr-box.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-<script>
-  (function () {
-    const video = document.getElementById('recorder-box-build-video');
-    if (!video || !('IntersectionObserver' in window)) return;
-
-    const observer = new IntersectionObserver(function (entries) {
-      if (!entries[0].isIntersecting) return;
-
-      video.play().then(function () {
-        observer.unobserve(video);
-      }).catch(function () {
-        // Playback controls remain available if the browser blocks autoplay.
-      });
-    }, { threshold: 0.35 });
-
-    observer.observe(video);
-  }());
-</script>

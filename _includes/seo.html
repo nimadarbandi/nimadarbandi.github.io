@@ -50,8 +50,12 @@
   Posts without an image fall back to their header, overlay image, or title icon.
 {% endcomment %}
 {% assign inline_image_source = nil %}
-{% if page.content contains "<img" %}
-  {% assign inline_image_parts = page.content | split: "<img" %}
+{% assign article_content = content %}
+{% if content contains "class=\"page__content\"" %}
+  {% assign article_content = content | split: "class=\"page__content\"" | last %}
+{% endif %}
+{% if article_content contains "<img" %}
+  {% assign inline_image_parts = article_content | split: "<img" %}
   {% assign first_inline_image = inline_image_parts[1] %}
   {% if first_inline_image contains "src=\"" %}
     {% assign inline_image_source = first_inline_image | split: "src=\"" | last | split: "\"" | first %}
