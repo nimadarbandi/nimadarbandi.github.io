@@ -13,10 +13,11 @@ skills:
   - Software
   - Device
   - Computer Vision
+  - Animal Data
 post_icon: /images/dvr-box.png
 post_icon_width: 34
 ---
-I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs, a diversity of meshed cameras with different types -- analogue or IP cameras -- are involved and we need a standard output for further computer vision analysis.
+I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments like animal houses. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs and cameras are involved. A diversity of meshed cameras with different types -- analogue or IP cameras -- and standardized output video files for further computer vision are supported.
 
 This project is implemented on a compact Linux based embeded device that can sit in the field and keep working as a dependable recording hub and can totally replace NVRs and DVR tasks to capture data and record videos. It supports DVR-based setups, standalone IP cameras -- with or without NVRs --, and mixed environments where several video sources need to be handled together as a standard source for further analysis for computer vision projects.
 
@@ -25,12 +26,12 @@ This project is implemented on a compact Linux based embeded device that can sit
 What makes this box valuable is the way it treats recording as an operational workflow, not just a background task:
 
 - It can record from multiple video sources at the same time.
-- It keeps footage organized in a readable structure by device and date.
+- It keeps footage organized in a well structured format by device and date.
 - It makes stored recordings easier to browse, export, and review later.
 - It supports remote access to saved footage from another computer on the network.
 - It gives operators a clearer view of storage condition and recording status.
 
-That matters in real settings where video analysis software needs clean reliable video input source for computer vision analysis in real time or offline. Researchers also may need to find footage quickly, hand storage to another team, or continue recording without constant manual attention, which is done easily by this device.
+That matters in real settings in animal farms where video analysis software needs clean reliable video input source for computer vision analysis in real time or offline. Researchers also may need to find footage quickly, hand storage to another team, or continue recording without constant manual attention, which is done easily by this device.
 
 ## Built for field practicality
 
