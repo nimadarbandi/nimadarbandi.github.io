@@ -46,10 +46,18 @@
 
 {% comment %}
   Use a post-specific image for link previews. `social_image` is available for a
-  purpose-made share card; existing posts automatically fall back to their
-  header image, overlay image, or the icon shown beside the post title.
+  purpose-made share card; otherwise use the first image displayed in the post.
+  Posts without an image fall back to their header, overlay image, or title icon.
 {% endcomment %}
-{% assign social_image = page.social_image | default: page.header.image | default: page.header.overlay_image | default: page.post_icon | default: site.og_image %}
+{% assign inline_image_source = nil %}
+{% if page.content contains "<img" %}
+  {% assign inline_image_parts = page.content | split: "<img" %}
+  {% assign first_inline_image = inline_image_parts[1] %}
+  {% if first_inline_image contains "src=\"" %}
+    {% assign inline_image_source = first_inline_image | split: "src=\"" | last | split: "\"" | first %}
+  {% endif %}
+{% endif %}
+{% assign social_image = page.social_image | default: inline_image_source | default: page.header.image | default: page.header.overlay_image | default: page.post_icon | default: site.og_image %}
 {% if social_image %}
   {% if social_image contains "://" %}
     {% assign social_image_url = social_image %}
