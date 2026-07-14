@@ -66,7 +66,26 @@ The images below show how the Recorder Box looks internally as a compact, practi
 
 The video below shows how the Recorder Box itself was created by me in Dr. Guoming Li Lab:
 
-<video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
+<video id="recorder-box-build-video" controls muted loop playsinline preload="metadata" style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
   <source src="/videos/dvr-box.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+<script>
+  (function () {
+    const video = document.getElementById('recorder-box-build-video');
+    if (!video || !('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+
+      video.play().then(function () {
+        observer.unobserve(video);
+      }).catch(function () {
+        // Playback controls remain available if the browser blocks autoplay.
+      });
+    }, { threshold: 0.35 });
+
+    observer.observe(video);
+  }());
+</script>
