@@ -16,6 +16,7 @@ skills:
   - Animal Data
 post_icon: /images/dvr-box.png
 post_icon_width: 34
+social_image: /images/dvr1.jpeg
 ---
 I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments like animal houses. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs and cameras are involved. A diversity of meshed cameras with different types -- analogue or IP cameras -- and standardized output video files for further computer vision are supported.
 
