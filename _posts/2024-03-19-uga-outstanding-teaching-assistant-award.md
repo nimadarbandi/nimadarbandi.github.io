@@ -11,6 +11,7 @@ skills:
   - Academia
 post_icon: /images/Award.png
 post_icon_width: 30
+social_image: /images/TA-Award.JPG
 ---
 I am honored to share that I received the **UGA Outstanding Teaching Assistant Award (Spring 2024)** from the School of Computing.
 

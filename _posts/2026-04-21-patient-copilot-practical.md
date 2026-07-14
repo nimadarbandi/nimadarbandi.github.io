@@ -14,6 +14,7 @@ skills:
   - Cancer
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
+social_image: /images/recorder.PNG
 ---
 I built **Patient Co-Pilot** mobile app to solve a common patient problem: confused with too much medical information, spread across too many places, from too many doctors.
 

@@ -16,6 +16,7 @@ skills:
   - Computer Vision
 post_icon: /images/paper.png
 post_icon_width: 30
+social_image: /images/BC-paper.png
 ---
 Our review article **AI for Early Diagnosis and Precision Treatment of Breast Cancer** has been published in the **European Journal of Cancer**.
 

@@ -17,6 +17,7 @@ skills:
   - Computer Vision
 post_icon: /images/before-slide.jpg
 post_icon_width: 35
+social_image: /images/before-slide.jpg
 ---
 I built this project to improve **background and artifact removal in multiplex pathology images**, including whole-slide imaging (WSI) and multi-channel microscopy data.
 

@@ -13,6 +13,7 @@ skills:
   - Human Data
 post_icon: /images/Award.png
 post_icon_width: 30
+social_image: /images/Pooia-Award-C.JPG
 ---
 I am grateful to share that I earned the **2026 POOIA Student Scholarship Award**.
 

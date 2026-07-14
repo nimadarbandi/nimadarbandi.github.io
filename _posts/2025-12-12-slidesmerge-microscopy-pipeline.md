@@ -17,6 +17,7 @@ skills:
   - Computer Vision
 post_icon: /images/virus.jpg
 post_icon_width: 30
+social_image: /images/Cycle.jpg
 ---
 I developed **slidesMerge** as a practical pipeline to align two large Aivia microscopy slides (>7 channels each) from different imaging cycles and fuse them into a single **multi-channel OME-TIFF** file.
 

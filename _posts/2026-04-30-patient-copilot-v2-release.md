@@ -15,6 +15,7 @@ skills:
   - Multi-Sensor
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
+social_image: /images/1.PNG
 ---
 
 I am publishing **Patient Co-Pilot v2 Beta**, a practical update focused on Multi-AI support and Symptom Monitoring. Download link for the Beta version is included.
