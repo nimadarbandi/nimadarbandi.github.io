@@ -23,7 +23,7 @@ To help the site owner understand traffic, the site sends a private visit notifi
 * Whether the browser is new or returning to this site
 * Time of the visit
 
-The notification does not include the visitor's IP address, precise location, full browser user-agent string, or name. The site respects a browser's Do Not Track preference. A small first-party browser-storage flag is used only to label a visit as new or returning.
+The notification does not include the visitor's IP address, precise location, full browser user-agent string, or name. A small first-party browser-storage flag is used only to label a visit as new or returning.
 
 ### Cookies and Web Beacons
 

@@ -3,9 +3,8 @@
     const endpoint = {{ site.visit_notifications.endpoint | jsonify }};
     const sessionKey = `darbandi_visit_notification_sent:${window.location.pathname}`;
 
-    // Respect a visitor's browser-level privacy preference and notify only once
-    // during a browser-tab session for each distinct page.
-    if (navigator.doNotTrack === "1" || sessionStorage.getItem(sessionKey)) return;
+    // Send one notification for each distinct page during a browser-tab session.
+    if (sessionStorage.getItem(sessionKey)) return;
 
     let referrerHost = "Direct";
     if (document.referrer) {
@@ -18,7 +17,6 @@
 
     const seenKey = "darbandi_visit_notifier_seen";
     const visitorType = localStorage.getItem(seenKey) ? "Returning" : "New";
-    localStorage.setItem(seenKey, "1");
 
     const payload = JSON.stringify({
       page: window.location.pathname,
@@ -31,18 +29,20 @@
       visitorType
     });
 
-    // sendBeacon is asynchronous and never delays navigation or rendering.
-    const sent = navigator.sendBeacon && navigator.sendBeacon(endpoint, payload);
-    if (!sent) {
-      fetch(endpoint, {
-        method: "POST",
-        body: payload,
-        keepalive: true,
-        mode: "cors"
-      }).catch(() => {});
-    }
-
-    sessionStorage.setItem(sessionKey, "1");
+    // Do not mark the page as notified until the Worker confirms receipt. This
+    // makes a transient browser or network failure retry on the next page load.
+    fetch(endpoint, {
+      method: "POST",
+      body: payload,
+      keepalive: true,
+      mode: "cors"
+    }).then((response) => {
+      if (!response.ok) throw new Error(`Visit notification failed: ${response.status}`);
+      sessionStorage.setItem(sessionKey, "1");
+      localStorage.setItem(seenKey, "1");
+    }).catch((error) => {
+      console.warn("Visit notification was not sent", error);
+    });
   })();
 
   function deviceCategory() {
