@@ -3,7 +3,7 @@
     const endpoint = {{ site.visit_notifications.endpoint | jsonify }};
     const sessionKey = `darbandi_visit_notification_sent:${window.location.pathname}`;
 
-    // Send one notification for each distinct page during a browser-tab session.
+    /* Send one notification for each distinct page during a browser-tab session. */
     if (sessionStorage.getItem(sessionKey)) return;
 
     let referrerHost = "Direct";
@@ -29,8 +29,8 @@
       visitorType
     });
 
-    // Do not mark the page as notified until the Worker confirms receipt. This
-    // makes a transient browser or network failure retry on the next page load.
+    /* Mark the page as notified only after the Worker confirms receipt, so a
+       transient browser or network failure retries on the next page load. */
     fetch(endpoint, {
       method: "POST",
       body: payload,
