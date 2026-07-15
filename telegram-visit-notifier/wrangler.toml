@@ -1,0 +1,6 @@
+name = "darbandi-telegram-visit-notifier"
+main = "src/index.js"
+compatibility_date = "2026-07-15"
+
+[vars]
+ALLOWED_ORIGIN = "https://darbandi.me"

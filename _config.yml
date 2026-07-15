@@ -171,6 +171,11 @@ analytics:
   google:
     tracking_id          : "G-6MV1G28MG0"  # add later
 
+# Telegram visit notifications are delivered by the deployed Cloudflare Worker.
+visit_notifications:
+  enabled                : true
+  endpoint               : "https://darbandi-telegram-visit-notifier.darbandi6007.workers.dev/visit"
+
 
 # Reading Files
 include:

@@ -1,0 +1,37 @@
+<script>
+  (() => {
+    const endpoint = {{ site.visit_notifications.endpoint | jsonify }};
+    const sessionKey = `darbandi_visit_notification_sent:${window.location.pathname}`;
+
+    // Respect a visitor's browser-level privacy preference and notify only once
+    // during a browser-tab session for each distinct page.
+    if (navigator.doNotTrack === "1" || sessionStorage.getItem(sessionKey)) return;
+
+    let referrerHost = "Direct";
+    if (document.referrer) {
+      try {
+        referrerHost = new URL(document.referrer).hostname;
+      } catch (_) {
+        referrerHost = "Unknown";
+      }
+    }
+
+    const payload = JSON.stringify({
+      page: window.location.pathname,
+      referrerHost
+    });
+
+    // sendBeacon is asynchronous and never delays navigation or rendering.
+    const sent = navigator.sendBeacon && navigator.sendBeacon(endpoint, payload);
+    if (!sent) {
+      fetch(endpoint, {
+        method: "POST",
+        body: payload,
+        keepalive: true,
+        mode: "cors"
+      }).catch(() => {});
+    }
+
+    sessionStorage.setItem(sessionKey, "1");
+  })();
+</script>
