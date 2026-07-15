@@ -134,7 +134,8 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
+# Paste the token supplied by Google Search Console here (not the full meta tag).
+google_site_verification : "tezmA6DJcb_b_iKGU1pPX-And5Y9l3VsDx1AHjsxIpc"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -152,9 +153,16 @@ og_description           :  "AI for healthcare, computer vision, genomics, and p
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Nima Darbandi
+  links:
+    - "https://computing.uga.edu/directory/people/nima-darbandi"
+    - "https://site.caes.uga.edu/isp/team/"
+    - "https://orcid.org/0009-0008-4678-9111"
+    - "https://scholar.google.com/citations?hl=en&user=-c0jfaUAAAAJ"
+    - "https://www.linkedin.com/in/nimadarbandi/"
+    - "https://www.researchgate.net/profile/Nima-Darbandi"
+    - "https://github.com/nimadarbandi"
 
 
 # Analytics

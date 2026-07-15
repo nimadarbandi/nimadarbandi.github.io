@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "About me"
+title: "Nima Darbandi | AI Researcher at University of Georgia"
+seo_title: "Nima Darbandi | AI Researcher at University of Georgia"
 author_profile: true
 redirect_from: 
   - /about/
