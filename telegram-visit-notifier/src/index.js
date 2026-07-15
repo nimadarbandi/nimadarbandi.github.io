@@ -22,6 +22,14 @@ function validReferrerHost(referrerHost) {
   return typeof referrerHost === "string" && referrerHost.length <= MAX_REFERRER_LENGTH;
 }
 
+function validDetail(value) {
+  return typeof value === "string" && value.length > 0 && value.length <= 100;
+}
+
+function detailOrUnknown(value) {
+  return validDetail(value) ? value : "Unknown";
+}
+
 export default {
   async fetch(request, env) {
     const allowedOrigin = env.ALLOWED_ORIGIN;
@@ -48,6 +56,14 @@ export default {
       return new Response("Invalid visit", { status: 400, headers: corsHeaders(origin) });
     }
 
+    const details = {
+      device: detailOrUnknown(visit.device),
+      browser: detailOrUnknown(visit.browser),
+      operatingSystem: detailOrUnknown(visit.operatingSystem),
+      language: detailOrUnknown(visit.language),
+      timeZone: detailOrUnknown(visit.timeZone),
+      visitorType: detailOrUnknown(visit.visitorType)
+    };
     const timestamp = easternTimestamp(new Date());
     const cf = request.cf || {};
     const location = [cf.city, cf.region, cf.country].filter(Boolean).join(", ") || "Unavailable";
@@ -55,7 +71,11 @@ export default {
       `Time: ${timestamp}`,
       `From: ${escapeHtml(location)}`,
       `Page: <code>${escapeHtml(visit.page)}</code>`,
-      `Referrer: ${escapeHtml(visit.referrerHost || "Direct")}`
+      `Referrer: ${escapeHtml(visit.referrerHost || "Direct")}`,
+      `Device: ${escapeHtml(details.device)} · ${escapeHtml(details.browser)} · ${escapeHtml(details.operatingSystem)}`,
+      `Language: ${escapeHtml(details.language)}`,
+      `Time zone: ${escapeHtml(details.timeZone)}`,
+      `Visitor: ${escapeHtml(details.visitorType)}`
     ].join("\n");
 
     const telegramResponse = await fetch(

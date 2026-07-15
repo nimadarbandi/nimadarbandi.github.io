@@ -1,7 +1,7 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
-modified: 2016-06-06
+modified: 2026-07-15
 ---
 
 {% include base_path %}
@@ -13,18 +13,17 @@ The privacy of my visitors is extremely important. This Privacy Policy outlines 
 
 First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
 
-### Log Files
+### Visit Notifications
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+To help the site owner understand traffic, the site sends a private visit notification containing:
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+* Page path and referrer hostname
+* Approximate city, region, and country
+* Broad device category, browser, operating system, language, and browser time zone
+* Whether the browser is new or returning to this site
+* Time of the visit
 
-All of this information is not linked to anything that is personally identifiable.
+The notification does not include the visitor's IP address, precise location, full browser user-agent string, or name. The site respects a browser's Do Not Track preference. A small first-party browser-storage flag is used only to label a visit as new or returning.
 
 ### Cookies and Web Beacons
 
