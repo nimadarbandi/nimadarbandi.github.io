@@ -21,9 +21,12 @@ To help the site owner understand traffic, the site sends a private visit notifi
 * Approximate city, region, and country
 * Broad device category, browser, operating system, language, and browser time zone
 * Whether the browser is new or returning to this site
+* UTM campaign parameters, when included in a shared link
+* Outbound-link, downloadable-file, and explicitly marked interaction events
+* A "likely bot" classification derived from the request user-agent; the raw user-agent is not retained or sent
 * Time of the visit
 
-The notification does not include the visitor's IP address, precise location, full browser user-agent string, or name. A small first-party browser-storage flag is used only to label a visit as new or returning.
+The notification does not include the visitor's IP address, precise location, full browser user-agent string, or name. A small first-party browser-storage flag is used only to label a visit as new or returning. Bot classification is a heuristic and may be inaccurate.
 
 ### Cookies and Web Beacons
 

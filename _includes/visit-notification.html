@@ -17,8 +17,7 @@
 
     const seenKey = "darbandi_visit_notifier_seen";
     const visitorType = localStorage.getItem(seenKey) ? "Returning" : "New";
-
-    const payload = JSON.stringify({
+    const visitDetails = {
       page: window.location.pathname,
       referrerHost,
       device: deviceCategory(),
@@ -26,24 +25,82 @@
       operatingSystem: operatingSystem(),
       language: navigator.language || "Unknown",
       timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone || "Unknown",
-      visitorType
-    });
+      visitorType,
+      utm: utmAttribution()
+    };
 
     /* Mark the page as notified only after the Worker confirms receipt, so a
        transient browser or network failure retries on the next page load. */
-    fetch(endpoint, {
-      method: "POST",
-      body: payload,
-      keepalive: true,
-      mode: "cors"
-    }).then((response) => {
-      if (!response.ok) throw new Error(`Visit notification failed: ${response.status}`);
+    sendNotification(endpoint, { ...visitDetails, eventType: "page_view" }).then(() => {
       sessionStorage.setItem(sessionKey, "1");
       localStorage.setItem(seenKey, "1");
     }).catch((error) => {
       console.warn("Visit notification was not sent", error);
     });
+
+    document.addEventListener("click", (event) => {
+      if (!(event.target instanceof Element)) return;
+      const target = event.target.closest("a[href], [data-track]");
+      if (!target) return;
+
+      const interaction = interactionDetails(target);
+      if (!interaction) return;
+
+      sendNotification(endpoint, { ...visitDetails, ...interaction }).catch((error) => {
+        console.warn("Interaction notification was not sent", error);
+      });
+    });
   })();
+
+  function sendNotification(endpoint, details) {
+    return fetch(endpoint, {
+      method: "POST",
+      body: JSON.stringify(details),
+      keepalive: true,
+      mode: "cors"
+    }).then((response) => {
+      if (!response.ok) throw new Error(`Visit notification failed: ${response.status}`);
+    });
+  }
+
+  function utmAttribution() {
+    const params = new URLSearchParams(window.location.search);
+    return ["source", "medium", "campaign", "term", "content"].reduce((utm, key) => {
+      const value = params.get(`utm_${key}`);
+      if (value) utm[key] = value.slice(0, 100);
+      return utm;
+    }, {});
+  }
+
+  function interactionDetails(element) {
+    const customLabel = element.dataset.track;
+    if (customLabel) {
+      return {
+        eventType: "custom_interaction",
+        eventLabel: customLabel.slice(0, 100)
+      };
+    }
+
+    if (!(element instanceof HTMLAnchorElement)) return null;
+    let target;
+    try {
+      target = new URL(element.href, window.location.href);
+    } catch (_) {
+      return null;
+    }
+    if (!["http:", "https:"].includes(target.protocol)) return null;
+
+    const linkText = (element.textContent || element.getAttribute("aria-label") || target.hostname)
+      .trim().replace(/\s+/g, " ").slice(0, 100);
+    const isDownload = /\.(pdf|zip|docx?|xlsx?|pptx?|csv|bib)$/i.test(target.pathname);
+    if (isDownload) {
+      return { eventType: "file_download", eventLabel: linkText, targetHost: target.hostname };
+    }
+    if (target.origin !== window.location.origin) {
+      return { eventType: "outbound_link", eventLabel: linkText, targetHost: target.hostname };
+    }
+    return null;
+  }
 
   function deviceCategory() {
     const userAgent = navigator.userAgent;

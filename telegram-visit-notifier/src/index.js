@@ -30,6 +30,24 @@ function detailOrUnknown(value) {
   return validDetail(value) ? value : "Unknown";
 }
 
+function optionalDetail(value) {
+  return validDetail(value) ? value : "";
+}
+
+function attributionDetails(utm) {
+  if (!utm || typeof utm !== "object" || Array.isArray(utm)) return [];
+  const fields = ["source", "medium", "campaign", "term", "content"];
+  return fields.flatMap((field) => {
+    const value = optionalDetail(utm[field]);
+    return value ? [`UTM ${field}: ${escapeHtml(value)}`] : [];
+  });
+}
+
+function likelyBot(request) {
+  const userAgent = request.headers.get("User-Agent") || "";
+  return /bot|crawler|spider|headless|curl|wget|python-requests|httpclient|selenium|playwright/i.test(userAgent);
+}
+
 export default {
   async fetch(request, env) {
     const allowedOrigin = env.ALLOWED_ORIGIN;
@@ -67,15 +85,23 @@ export default {
     const timestamp = easternTimestamp(new Date());
     const cf = request.cf || {};
     const location = [cf.city, cf.region, cf.country].filter(Boolean).join(", ") || "Unavailable";
+    const eventType = optionalDetail(visit.eventType) || "page_view";
+    const interactionLines = eventType === "page_view" ? [] : [
+      `Interaction: ${escapeHtml(eventType.replace(/_/g, " "))}${optionalDetail(visit.eventLabel) ? ` — ${escapeHtml(visit.eventLabel)}` : ""}`,
+      ...(optionalDetail(visit.targetHost) ? [`Target: ${escapeHtml(visit.targetHost)}`] : [])
+    ];
     const message = [
       `Time: ${timestamp}`,
       `From: ${escapeHtml(location)}`,
       `Page: <code>${escapeHtml(visit.page)}</code>`,
       `Referrer: ${escapeHtml(visit.referrerHost || "Direct")}`,
+      ...interactionLines,
       `Device: ${escapeHtml(details.device)} · ${escapeHtml(details.browser)} · ${escapeHtml(details.operatingSystem)}`,
       `Language: ${escapeHtml(details.language)}`,
       `Time zone: ${escapeHtml(details.timeZone)}`,
-      `Visitor: ${escapeHtml(details.visitorType)}`
+      `Visitor: ${escapeHtml(details.visitorType)}`,
+      `Likely bot: ${likelyBot(request) ? "Yes" : "No"}`,
+      ...attributionDetails(visit.utm)
     ].join("\n");
 
     const telegramResponse = await fetch(

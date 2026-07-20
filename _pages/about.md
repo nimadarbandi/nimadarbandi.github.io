@@ -1,10 +1,9 @@
 ---
-permalink: /
+permalink: /about/
 title: "Nima Darbandi | AI Researcher at University of Georgia"
 seo_title: "Nima Darbandi | AI Researcher at University of Georgia"
 author_profile: true
 redirect_from: 
-  - /about/
   - /about.html
 ---
 
@@ -143,11 +142,11 @@ redirect_from:
 <div class="about-section">
   <h2>Research Interests</h2>
   <div class="interest-chips">
-    <a class="interest-chip" href="/year-archive/">AI for Animal Behavior Analysis</a>
-    <a class="interest-chip" href="/year-archive/">Early Disease Detection</a>
-    <a class="interest-chip" href="/year-archive/">AI for Healthcare &amp; Precision Medicine</a>
-    <a class="interest-chip" href="/year-archive/">Computer Vision &amp; Multimodal Learning</a>
-    <a class="interest-chip" href="/year-archive/">Foundation Models &amp; Label-Efficient Learning</a>
+    <a class="interest-chip" href="{{ '/' | relative_url }}">AI for Animal Behavior Analysis</a>
+    <a class="interest-chip" href="{{ '/' | relative_url }}">Early Disease Detection</a>
+    <a class="interest-chip" href="{{ '/' | relative_url }}">AI for Healthcare &amp; Precision Medicine</a>
+    <a class="interest-chip" href="{{ '/' | relative_url }}">Computer Vision &amp; Multimodal Learning</a>
+    <a class="interest-chip" href="{{ '/' | relative_url }}">Foundation Models &amp; Label-Efficient Learning</a>
   </div>
 </div>
 
