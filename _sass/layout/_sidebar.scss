@@ -194,9 +194,13 @@
 }
 
 .author__name-link,
-.author__name-link:hover,
 .author__name-link:focus {
   color: inherit;
+  text-decoration: none;
+}
+
+.author__name-link:hover {
+  color: #BA0C2F;
   text-decoration: none;
 }
 
