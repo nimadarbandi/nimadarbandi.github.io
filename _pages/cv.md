@@ -9,6 +9,21 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .archive a {
+    color: var(--global-text-color, #2a2e33);
+    text-decoration: underline;
+    text-decoration-color: rgba(42, 46, 51, 0.3);
+    text-underline-offset: 2px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  }
+
+  .archive a:hover {
+    color: #BA0C2F;
+    text-decoration-color: currentColor;
+  }
+</style>
+
 I am a Ph.D. student in Computer Science at the University of Georgia. My work combines computer vision, machine learning, multimodal data, and large language models to develop practical systems for healthcare, precision medicine, and animal behavior analysis.
 
 Education

@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "WebFetch(domain:credentials.ualr.edu)",
+      "WebFetch(domain:learn.nvidia.com)",
+      "Bash(command -v bundle)",
+      "Bash(bundle exec *)"
     ]
   }
 }
