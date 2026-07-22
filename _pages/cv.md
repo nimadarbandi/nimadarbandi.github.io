@@ -18,7 +18,7 @@ Education
   * Thesis: *A New Method to Estimate QoE for Internet Users*
 * **B.S. in Information Technology**, Shiraz University of Technology, Shiraz, Iran — 2006–2010
 
-Research and professional experience
+Research and Professional Experience
 ======
 * **Graduate Research Assistant**, Intelligent Systems for Poultry Lab, University of Georgia — 2025–Present
   * Develop computer-vision and multimodal data systems for animal tracking, behavior analysis, and early disease-detection research.
@@ -31,21 +31,28 @@ Research and professional experience
 * **Linux Expert**, Parspack Cloud Services, Tehran, Iran — 2021–2022
   * Resolved customer issues involving Linux servers, cloud hosting, VPS environments, and related infrastructure.
 
-* **IT Consultant**, Monenco Industry Group, Tehran, Iran — 2020–2022
-  * Supported an electric-power-company communications project connecting more than 200 branches through a Cisco VoIP system.
+* **IT Consultant**, Monenco, Tehran, Iran — 2020–2022
+  * Supported a power-company communication project connecting more than 200 branches through a Cisco VoIP system.
 
 * **Technical Manager**, HamyarNet ISP, Fars Province, Iran — 2017–2020
-  * Led the technical team responsible for expanding and maintaining ADSL and point-to-point wireless internet services.
+  * Led the technical team responsible for expanding and maintaining ADSL2+ and point-to-point wireless internet services.
 
-* **Researcher**, Azmoon Keyfiat, Shiraz, Iran — 2014–2017
-  * Applied a Raspberry Pi-based measurement system to evaluate internet quality of experience, collect network data, and support ISP service-quality assessment.
+Startups and Self Founded Projects
+======
+* **Puzzle**, Shiraz, Iran — 2014–2017
+  * Founded and ran an independent network-services startup, leading an installation team and producing network-management devices.
+  * Installed passive and active telecom infrastructure for ISPs: racks, cable ladders, structured cabling for ADSL voice lines, DSLAMs, routers, and switches.
+  * Delivered SOHO and corporate network installation, overhaul, and maintenance, including domain controllers, internal internet distribution, and IP telephony support.
+  * Designed and built **JIBBIK**, a Raspberry Pi-based network-management appliance for internet distribution in companies; sold 20 units. [Read more](/portfolio/jibbik-network-resource-management/)
+  * Built and operated **pazel.ir**, a free website that ranked ISPs by service quality and tariffs for each area on a map, using Raspberry Pi-based measurement probes and small agents to periodically collect network data (available bandwidth, RTT, jitter) and score providers accordingly, and release the transparent reports on the website, helping users choose the best ISP for their location (discontinued).
 
-Selected projects
+Selected Projects
 ======
 * **Patient Co-Pilot** — Mobile, source-grounded AI companion for patient education, visit preparation, document organization, and health-monitoring workflows. [GitHub repository](https://github.com/nimadarbandi/CopilotApp)
 * **slidesMerge** — Full-resolution microscopy-slide alignment and multi-channel OME-TIFF fusion pipeline for computational pathology. [GitHub repository](https://github.com/nimadarbandi/slidesMerge)
 * **Recorder Box** — Linux-based multi-camera recording and footage-management platform for robust field data collection. [GitHub repository](https://github.com/nimadarbandi/DVR-Recorder/tree/main/linux)
 * **CheXray** — Research prototype that combines chest X-ray models and an LLM to generate structured report drafts. [GitHub repository](https://github.com/nimadarbandi/chestXray)
+* **JIBBIK** — Raspberry Pi-based network-management appliance for combining ISP connections, distributing bandwidth, and centralizing access control; commercialized and sold to 20 companies (2015–2017). [Project write-up](/portfolio/jibbik-network-resource-management/)
 
 Certificates
 ======
