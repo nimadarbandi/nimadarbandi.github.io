@@ -1,5 +1,5 @@
 ---
-title: "Simulator Robot: A Ground-Truth Object Simulator and data collector (Kinematics/Trajectory) for computer vision analysis validation & calibration"
+title: "Simulator Robot: An Object Simulator and Ground-Truth Data Collector for CV Analysis Validation & Calibration"
 date: 2026-06-03
 permalink: /posts/2026/06/poultry-house-rover-apriltag-navigation/
 tags:
@@ -15,7 +15,7 @@ skills:
   - Computer Vision
   - Animal Data
   - Multi-Sensor
-post_icon: /images/rover.png
+post_icon: /images/Rover.png
 post_icon_width: 30
 social_image: /images/poultry-rover-camera-gimbal-front.jpeg
 excerpt: "A small AprilTag-guided ground rover that stands in for a chicken inside a broiler house pen, giving inch-level ground-truth movement data to calibrate pen cameras and validate chicken-tracking pipelines."
