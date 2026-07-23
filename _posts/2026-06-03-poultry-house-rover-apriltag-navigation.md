@@ -18,7 +18,7 @@ skills:
 post_icon: /images/Rover.png
 post_icon_width: 30
 social_image: /images/poultry-rover-camera-gimbal-front.jpeg
-excerpt: "A small AprilTag-guided ground rover that stands in for a small animals inside a farm house pen, giving inch-level ground-truth movement data to calibrate pen cameras and validate animal-tracking pipelines."
+excerpt: "A small AprilTag-guided ground rover that stands in for objects moving on the ground, giving inch-level ground-truth movement data to calibrate cameras and validate extracted CV kinematics information."
 ---
 You can't ask a animals to walk a known path at a known speed so that a tracking camera can be checked against it. A **rover can**. I built the **Simulator Rover Robot** as a controllable stand-in for animal inside a farm house: it drives itself around the floor using printed AprilTag landmarks bolted to the walls, and because it always knows its own position in real-world inches, every trip it makes is a ground-truth trajectory. That trajectory is exactly what's needed to calibrate pen cameras and standardize how a computer-vision pipeline tracks objects' movements in the same space.
 
