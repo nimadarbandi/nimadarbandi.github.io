@@ -18,11 +18,11 @@ skills:
 post_icon: /images/Rover.png
 post_icon_width: 30
 social_image: /images/poultry-rover-camera-gimbal-front.jpeg
-excerpt: "A small AprilTag-guided ground rover that stands in for a chicken inside a broiler house pen, giving inch-level ground-truth movement data to calibrate pen cameras and validate chicken-tracking pipelines."
+excerpt: "A small AprilTag-guided ground rover that stands in for a small animals inside a farm house pen, giving inch-level ground-truth movement data to calibrate pen cameras and validate animal-tracking pipelines."
 ---
 You can't ask a animals to walk a known path at a known speed so that a tracking camera can be checked against it. A **rover can**. I built the **Simulator Rover Robot** as a controllable stand-in for animal inside a farm house: it drives itself around the floor using printed AprilTag landmarks bolted to the walls, and because it always knows its own position in real-world inches, every trip it makes is a ground-truth trajectory. That trajectory is exactly what's needed to calibrate pen cameras and standardize how a computer-vision pipeline tracks objects' movements in the same space.
 
-<video controls muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto; border-radius:12px;">
+<video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto; border-radius:12px;">
   <source src="/videos/poultry-rover-dashboard.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
@@ -74,13 +74,13 @@ Control is a Flask laptop app talking to a Waveshare-style JSON API on the rover
 
 ## The laptop dashboard: calibration and data analysis
 
-This is the part shown in the video above. The dashboard isn't just a remote control — it's where a run gets turned into usable calibration data. It polls the rover for live telemetry while driving, then rolls a full run into a trip report: distance traveled, average and peak speed, total turn, and elapsed time, alongside seven synced kinematics charts.
-
-<img src="/images/poultry-rover-kinematics-graphs.jpg" alt="Dashboard kinematics graphs: linear and angular velocity, linear acceleration, IMU acceleration, heading, voltage, moment speed, and cumulative distance" style="display:block; width:100%; max-width:920px; height:auto; margin:1.25rem auto; border-radius:12px; border:1px solid rgba(20,40,60,0.12); box-shadow:0 14px 32px rgba(15,23,42,0.14);" />
-
-The most useful output for calibration work is the dwell-time heatmap: the logged path is resampled and accumulated onto the pen floor plan, smoothed, and rendered on a blue-to-red scale so the spots where the rover lingered — corners, turnarounds, feeder/drinker lines — pop out visually against the tag landmarks.
+This is the part shown in the video above. The dashboard isn't just a remote control — it's where a run gets turned into usable calibration data. The most useful output for calibration work is the dwell-time heatmap: the logged path is resampled and accumulated onto the pen floor plan, smoothed, and rendered on a blue-to-red scale so the spots where the rover lingered — corners, turnarounds, feeder/drinker lines — pop out visually against the tag landmarks.
 
 <img src="/images/poultry-rover-dwell-heatmap.jpg" alt="Dwell-time heatmap of a logged run over the pen floor plan, with numbered AprilTag landmarks around the perimeter" style="display:block; width:100%; max-width:920px; height:auto; margin:1.25rem auto; border-radius:12px; border:1px solid rgba(20,40,60,0.12); box-shadow:0 14px 32px rgba(15,23,42,0.14);" />
+
+It also polls the rover for live telemetry while driving, then rolls a full run into a trip report: distance traveled, average and peak speed, total turn, and elapsed time, alongside seven synced kinematics charts.
+
+<img src="/images/poultry-rover-kinematics-graphs.jpg" alt="Dashboard kinematics graphs: linear and angular velocity, linear acceleration, IMU acceleration, heading, voltage, moment speed, and cumulative distance" style="display:block; width:100%; max-width:920px; height:auto; margin:1.25rem auto; border-radius:12px; border:1px solid rgba(20,40,60,0.12); box-shadow:0 14px 32px rgba(15,23,42,0.14);" />
 
 Because a `tag_nav.py` log can be pasted or loaded after the fact, none of this requires a live connection — a run recorded on the rover out in the pen gets analyzed later on any laptop. That's what makes it practical as a calibration tool: record a rover pass with known ground-truth positions, then run the pen's animal-tracking pipeline over the same footage and line the two trajectories up to check where the tracking drifts, where camera coverage has blind spots, and whether tracked speed/heading numbers hold up against the rover's own IMU and odometry.
 
