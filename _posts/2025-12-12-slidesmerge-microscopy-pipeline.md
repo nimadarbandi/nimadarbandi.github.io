@@ -16,6 +16,10 @@ skills:
   - Medical Image
   - Computer Vision
 post_icon: /images/virus.jpg
+excerpt: "slidesMerge is an open-source pipeline for full-resolution microscopy slide alignment and 14-channel OME-TIFF fusion, built for computational pathology research."
+app_name: "slidesMerge"
+app_category: "DeveloperApplication"
+repo_url: "https://github.com/nimadarbandi/slidesMerge"
 post_icon_width: 30
 social_image: /images/Cycle.jpg
 ---

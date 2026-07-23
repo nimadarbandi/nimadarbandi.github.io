@@ -5,7 +5,12 @@
       "WebFetch(domain:credentials.ualr.edu)",
       "WebFetch(domain:learn.nvidia.com)",
       "Bash(command -v bundle)",
-      "Bash(bundle exec *)"
+      "Bash(bundle exec *)",
+      "Bash(ruby -v)",
+      "Bash(gem list *)",
+      "Bash(python3 -)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m pip install --quiet --user pyyaml)"
     ]
   }
 }

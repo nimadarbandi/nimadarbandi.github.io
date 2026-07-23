@@ -15,6 +15,11 @@ skills:
 post_icon: /images/faraz-icon.png
 post_icon_width: 35
 social_image: /images/recorder.PNG
+excerpt: "Patient Co-Pilot is a mobile app that helps patients organize medical records, prepare for clinical visits, and get source-grounded answers about their own care."
+app_name: "Patient Co-Pilot"
+app_category: "HealthApplication"
+app_os: "iOS"
+repo_url: "https://github.com/nimadarbandi/CopilotApp"
 ---
 I built **Patient Co-Pilot** mobile app to solve a common patient problem: confused with too much medical information, spread across too many places, from too many doctors.
 

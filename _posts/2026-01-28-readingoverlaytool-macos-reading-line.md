@@ -11,6 +11,11 @@ skills:
   - Software
 post_icon: /images/swift.png
 post_icon_width: 30
+excerpt: "ReadingOverlayTool is a free, open-source Swift app for macOS that overlays an adjustable reading line on PDFs to reduce eye strain during long reading sessions."
+app_name: "ReadingOverlayTool"
+app_category: "UtilitiesApplication"
+app_os: "macOS"
+repo_url: "https://github.com/nimadarbandi/ReadingOverlayTool"
 ---
 I developed **ReadingOverlayTool** to make long PDF reading sessions on macOS easier and less fatiguing. Super useful for putting less strain on eyes while reading long papers in any room lighting conditions.
 

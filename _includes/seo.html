@@ -129,6 +129,57 @@
   </script>
 {% endif %}
 
+{% assign article_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
+{% if page.date %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | markdownify | strip_html | strip_newlines | escape_once | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+      "url": {{ article_url | jsonify }},
+      "mainEntityOfPage": {{ article_url | jsonify }},
+      {% if social_image_url %}"image": {{ social_image_url | jsonify }},{% endif %}
+      "author": {
+        "@type": "Person",
+        "name": {{ site.name | jsonify }},
+        "url": {{ seo_url | jsonify }}
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": {{ site.name | jsonify }}
+      }
+    }
+  </script>
+{% endif %}
+
+{% comment %}
+  Opt-in SoftwareApplication schema for posts/pages about a specific named tool.
+  Set app_name (and optionally app_category, app_os, repo_url) in front matter to enable.
+{% endcomment %}
+{% if page.app_name %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": {{ page.app_name | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      {% if page.app_category %}"applicationCategory": {{ page.app_category | jsonify }},{% endif %}
+      {% if page.app_os %}"operatingSystem": {{ page.app_os | jsonify }},{% endif %}
+      "url": {{ article_url | jsonify }},
+      {% if page.repo_url %}"codeRepository": {{ page.repo_url | jsonify }},{% endif %}
+      {% if social_image_url %}"image": {{ social_image_url | jsonify }},{% endif %}
+      "author": {
+        "@type": "Person",
+        "name": {{ site.name | jsonify }},
+        "url": {{ seo_url | jsonify }}
+      }
+    }
+  </script>
+{% endif %}
+
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}

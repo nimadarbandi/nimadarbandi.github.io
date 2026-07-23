@@ -16,6 +16,10 @@ skills:
   - Medical Image
   - Computer Vision
 post_icon: /images/virus.jpg
+excerpt: "An update to slidesMerge, the open-source microscopy slide alignment and OME-TIFF fusion pipeline, adding config-driven parameters, manual channel selection, and better diagnostics."
+app_name: "slidesMerge"
+app_category: "DeveloperApplication"
+repo_url: "https://github.com/nimadarbandi/slidesMerge"
 post_icon_width: 30
 ---
 

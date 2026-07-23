@@ -15,6 +15,10 @@ skills:
   - Medical Image
 post_icon: /images/chexray.png
 post_icon_width: 30
+excerpt: "CheXray is a research prototype combining chest X-ray classification models with an LLM to draft structured radiology reports, for research and educational use."
+app_name: "CheXray"
+app_category: "HealthApplication"
+repo_url: "https://github.com/nimadarbandi/chestXray"
 ---
 I developed **CheXray** as a research prototype to combine computer vision models and an LLM for chest X-ray interpretation support.
 
