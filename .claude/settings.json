@@ -10,7 +10,18 @@
       "Bash(gem list *)",
       "Bash(python3 -)",
       "Bash(pip3 install *)",
-      "Bash(python3 -m pip install --quiet --user pyyaml)"
+      "Bash(python3 -m pip install --quiet --user pyyaml)",
+      "Read(//Users/nima/Projects/poultry/Robot/**)",
+      "Bash(ffprobe -v error -show_entries format=duration,size,bit_rate -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 \"images/RobotWebsite.mov\")",
+      "Bash(xargs -I{} sh -c 'echo \"--{}--\"; sed -n \"1,25p\" \"{}\"')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://github.com/nimadarbandi/Robot)",
+      "Bash(ffmpeg -y -i \"/Users/nima/Projects/profile/nimadarbandi.github.io/images/RobotWebsite.mov\" -c copy -movflags +faststart \"/Users/nima/Projects/profile/nimadarbandi.github.io/videos/poultry-rover-dashboard.mp4\")",
+      "Bash(xargs -n1 basename)",
+      "Bash(mv \"1CE07AC4-E408-4A52-B93F-42FF51529EE6_4_5005_c.jpeg\" \"poultry-rover-prototype-scale-test.jpeg\")",
+      "Bash(mv \"46D7D4F8-86E2-4CAF-9C51-050F821F2230_4_5005_c.jpeg\" \"poultry-rover-raspberry-pi-mount-front.jpeg\")",
+      "Bash(mv \"5869AEC8-6767-4FF4-9F50-4431E41CA8FB_4_5005_c.jpeg\" \"poultry-rover-raspberry-pi-mount-rear.jpeg\")",
+      "Bash(mv \"B8AC46A5-7C53-44D6-B1DC-C2B55E2ECCB0_4_5005_c.jpeg\" \"poultry-rover-battery-gimbal-mount.jpeg\")",
+      "Bash(mv \"9D4FDD87-0C93-4B0A-B7D7-3E19A27A7BA3_1_105_c.jpeg\" \"poultry-rover-battery-closeup.jpeg\")"
     ]
   }
 }
