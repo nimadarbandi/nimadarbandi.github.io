@@ -1,6 +1,7 @@
 ---
 title: "CheXray: Multi-Model Chest X-ray Analysis and Report Drafting"
 date: 2025-05-28
+show_on_updates: true
 permalink: /posts/2025/05/chexray-multimodel-report-drafting/
 tags:
   - medical imaging

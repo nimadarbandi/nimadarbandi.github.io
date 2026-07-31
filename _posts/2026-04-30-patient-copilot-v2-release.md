@@ -1,6 +1,7 @@
 ---
 title: "Patient Co-Pilot v2: Multi-AI, Apple Health Monitoring, Source-grounded ChatBot"
 date: 2026-04-30
+show_on_updates: true
 permalink: /posts/2026/04/patient-copilot-v2-release/
 tags:
   - healthcare ai

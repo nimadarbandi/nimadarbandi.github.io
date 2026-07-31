@@ -1,6 +1,7 @@
 ---
 title: "Patient Co-Pilot: Helping Patients Navigate Complex Care with Confidence"
 date: 2026-04-21
+show_on_updates: true
 permalink: /posts/2026/04/patient-copilot-practical/
 tags:
   - healthcare ai

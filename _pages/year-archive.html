@@ -9,8 +9,13 @@ redirect_from:
 ---
 
 {% include base_path %}
+{% comment %}
+  Posts are shown here by default. Add `show_on_updates: false` to a post's
+  front matter to hide it from this page without unpublishing the post itself.
+{% endcomment %}
+{% assign updates_posts = site.posts | where: "show_on_updates", true %}
 {% assign skills_blob = "" %}
-{% for post in site.posts %}
+{% for post in updates_posts %}
   {% if post.skills %}
     {% for skill in post.skills %}
       {% capture skills_blob %}{{ skills_blob }}{{ skill }}|||{% endcapture %}
@@ -76,7 +81,7 @@ redirect_from:
   {% assign skill_trim = skill | strip %}
   {% if skill_trim != "" %}
     {% assign skill_count = 0 %}
-    {% for post in site.posts %}
+    {% for post in updates_posts %}
       {% if post.skills contains skill_trim %}
         {% assign skill_count = skill_count | plus: 1 %}
       {% endif %}
@@ -92,9 +97,9 @@ redirect_from:
 {% assign sorted_skill_entries = skill_sort_blob | split: "__ENTRY__" | sort | reverse %}
 
 <div id="post-skill-filter" class="post-skill-filter" aria-label="Filter posts by skill">
-  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count">{{ site.posts | size }}</span></button>
+  <button type="button" data-skill="all" class="is-active" aria-pressed="true">All <span class="filter-count">{{ updates_posts | size }}</span></button>
   {% assign academia_count = 0 %}
-  {% for post in site.posts %}
+  {% for post in updates_posts %}
     {% if post.skills contains "Academia" %}
       {% assign academia_count = academia_count | plus: 1 %}
     {% endif %}
@@ -114,7 +119,7 @@ redirect_from:
 </div>
 
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
+{% for post in updates_posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
     <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>

@@ -1,6 +1,7 @@
 ---
 title: "Started a Graduate Research Assistantship Position in ISP Lab"
 date: 2026-01-12
+show_on_updates: true
 permalink: /posts/2026/01/research-assistantship-guoming-li/
 tags:
   - research assistantship

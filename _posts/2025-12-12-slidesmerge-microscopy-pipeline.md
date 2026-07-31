@@ -1,6 +1,7 @@
 ---
 title: "slidesMerge: Microscopy Slide Alignment and 14-Channel OME-TIFF Fusion"
 date: 2025-12-12
+show_on_updates: true
 permalink: /posts/2025/12/slidesmerge-microscopy-pipeline/
 tags:
   - microscopy

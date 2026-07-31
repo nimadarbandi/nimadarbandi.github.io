@@ -1,6 +1,7 @@
 ---
 title: "Simulator Robot: An Object Simulator and Ground-Truth Data Collector for CV Analysis Validation & Calibration"
 date: 2026-06-03
+show_on_updates: false
 permalink: /posts/2026/06/poultry-house-rover-apriltag-navigation/
 tags:
   - poultry

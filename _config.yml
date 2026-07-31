@@ -265,6 +265,9 @@ defaults:
       comments: true
       share: true
       related: true
+      # Set `show_on_updates: false` in a post's front matter to hide it from
+      # the Updates page while keeping the post available at its own URL.
+      show_on_updates: true
   # _pages
   - scope:
       path: ""

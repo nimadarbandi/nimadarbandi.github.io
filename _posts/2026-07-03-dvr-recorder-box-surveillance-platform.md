@@ -1,6 +1,7 @@
 ---
 title: "Recorder Box: A Recording and Footage-Handling Device for video data collection"
 date: 2026-07-03
+show_on_updates: true
 permalink: /posts/2026/07/dvr-recorder-box-surveillance-platform/
 tags:
   - surveillance

@@ -1,6 +1,7 @@
 ---
 title: "CD73 KO vs WT RNA-seq Analysis with Kallisto and Sleuth"
 date: 2025-12-01
+show_on_updates: true
 permalink: /posts/2026/04/cd73-ko-vs-wt-rnaseq-analysis/
 tags:
   - bioinformatics

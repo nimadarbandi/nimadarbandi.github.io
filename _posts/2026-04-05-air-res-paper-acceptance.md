@@ -1,6 +1,7 @@
 ---
 title: "Paper Accepted at AIR-RES 2026"
 date: 2026-04-05
+show_on_updates: true
 permalink: /posts/2026/04/air-res-paper-acceptance/
 tags:
   - conference

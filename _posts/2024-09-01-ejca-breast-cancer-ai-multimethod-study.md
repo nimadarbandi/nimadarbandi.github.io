@@ -1,6 +1,7 @@
 ---
 title: "Paper Published at European Journal of Cancer"
 date: 2024-09-01
+show_on_updates: true
 permalink: /posts/2024/09/ejca-breast-cancer-ai-multimethod-study/
 tags:
   - breast cancer

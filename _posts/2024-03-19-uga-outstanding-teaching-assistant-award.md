@@ -1,6 +1,7 @@
 ---
 title: "Honored to Receive UGA School of Computing Outstanding TA Award"
 date: 2024-03-19
+show_on_updates: true
 permalink: /posts/2024/03/uga-outstanding-teaching-assistant-award/
 tags:
   - uga

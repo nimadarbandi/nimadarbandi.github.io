@@ -1,6 +1,7 @@
 ---
 title: "slidesMerge Update: Config-Driven Parameters, Manual CC Selection, and Better Diagnostics"
 date: 2026-05-02
+show_on_updates: true
 permalink: /posts/2026/05/slidesmerge-v2-config-update/
 tags:
   - microscopy

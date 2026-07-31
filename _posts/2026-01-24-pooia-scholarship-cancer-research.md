@@ -1,6 +1,7 @@
 ---
 title: "Honored to Receive the 2026 POOIA Student Scholarship Award for Cancer Research"
 date: 2026-01-24
+show_on_updates: true
 permalink: /posts/2026/01/pooia-scholarship-cancer-research/
 tags:
   - scholarship

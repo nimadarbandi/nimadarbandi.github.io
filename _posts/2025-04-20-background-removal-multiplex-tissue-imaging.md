@@ -1,6 +1,7 @@
 ---
 title: "Background and Artifact Removal for Multiplex Tissue Imaging"
 date: 2025-04-20
+show_on_updates: true
 permalink: /posts/2026/04/background-removal-multiplex-tissue-imaging/
 tags:
   - multiplex imaging
