@@ -2,7 +2,7 @@
 title: "Simulator Robot: An Object Simulator and Ground-Truth Data Collector for CV Analysis Validation & Calibration"
 date: 2026-06-03
 show_on_updates: false
-permalink: /posts/2026/06/poultry-house-rover-apriltag-navigation/
+permalink: /posts/2026/06/rover-apriltag-navigation/
 tags:
   - poultry
   - robotics
@@ -30,7 +30,7 @@ You can't ask a animals to walk a known path at a known speed so that a tracking
 
 The video above walks through the laptop dashboard that pairs with the rover — driving it live, watching telemetry stream in, and replaying a logged trip for offline data analysis.
 
-## Why simulate a chicken with a rover
+## Why simulate an animal with a rover
 
 Camera-based animal tracking in a farm house has no reliable ground truth to check itself against — you can't put a ruler on a moving animal, and hand-labeling video is slow and still just an estimate. The rover solves that by being an animal that reports its own exact position:
 
