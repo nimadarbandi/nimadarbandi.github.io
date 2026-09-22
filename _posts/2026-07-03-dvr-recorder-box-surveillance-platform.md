@@ -26,10 +26,10 @@ repo_url: "https://github.com/nimadarbandi/DVR-Recorder/tree/main/linux"
 ---
 I built **Recorder Box** as a heavy-duty recording and storage Device from scratch using linux ffmpeg stream recording package in a waterproof 12"x12" enclosure which comes in handy in Computer Vision projects during data collection phase usable in harsh conditioned environments like animal houses. The goal was not just to capture video, but to make footage easier to manage, monitor, retrieve, analyze and review when multiple DVRs and cameras are involved. A diversity of meshed cameras with different types -- analogue or IP cameras -- and standardized output video files for further computer vision are supported.
 
-<video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
+<!-- <video controls autoplay muted loop playsinline style="display:block; width:100%; max-width:920px; height:auto; margin:1rem auto;">
   <source src="/videos/dvr-box.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>
+</video> -->
 
 This project is implemented on a compact Linux based embeded device that can sit in the field and keep working as a dependable recording hub and can totally replace NVRs and DVR tasks to capture data and record videos. It supports DVR-based setups, standalone IP cameras -- with or without NVRs --, and mixed environments where several video sources need to be handled together as a standard source for further analysis for computer vision projects.
 
