@@ -1,5 +1,5 @@
 ---
-title: "Patient Co-Pilot Demo Paper Accepted to NeurIPS 2026 GenAI4Health Workshop"
+title: "Demo Paper Accepted to NeurIPS 2026 - GenAI4Health Workshop"
 date: 2026-10-03
 show_on_updates: true
 permalink: /posts/2026/10/genai4health-demo-paper-acceptance/
